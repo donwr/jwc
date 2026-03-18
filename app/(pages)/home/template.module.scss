@@ -1,0 +1,56 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 10000;
+  visibility: visible;
+}
+
+.fullScreen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loadingBarContainer {
+  width: 200px; // Adjust the width of the loading bar container
+  height: 3px;
+  background-color: #333; // Darker background for loading track
+  border-radius: 5px;
+  overflow: hidden;
+  transform: translateY(140px); // Offset it a bit lower
+}
+
+.initials {
+  height: 80px;
+  width: 80px;
+  opacity: 30%;
+}
+
+.loadingLogo {
+  transform: translateY(120px); // Offset it a bit lower
+  font-family: 'Supreme', Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-style: italic;
+}
+
+.loadingBar {
+  height: 100%;
+  background-color: #ffffff;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.animationWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

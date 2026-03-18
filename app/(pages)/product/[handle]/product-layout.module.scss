@@ -1,0 +1,129 @@
+.productPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+  font-family: sans-serif;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.imagesContainer {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  /* Enable vertical scrolling */
+  max-height: 100vh;
+  /* Constrain height to viewport */
+  scrollbar-width: 2px !important;
+  /* Thin scrollbar for Firefox */
+  scrollbar-color: #ccc transparent;
+  padding-right: 1rem; // Add padding for better scrollbar visibility
+  // Re-enable scrollbar for this specific container
+  scrollbar-width: 2px !important;
+  /* For Firefox */
+  -ms-overflow-style: auto;
+  /* For Internet Explorer/Edge */
+
+  &::-webkit-scrollbar {
+    width: 8px !important;
+    /* Show scrollbar */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.productInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+
+  * {
+    max-width: 500px;
+  }
+}
+
+.helpText {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.productName {
+  font-size: 1.125rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.sizeGuide {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.editorsNote {
+  h2 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.expandableSection {
+  margin-top: 1rem;
+}
+
+.expandableButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.expandableContent {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}

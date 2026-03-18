@@ -1,0 +1,83 @@
+@import 'utils';
+
+.shop {
+  margin: var(--spacer-md) 0;
+
+  @include respond-to(md) {
+    margin: var(--spacer-md) var(--layout-margin);
+  }
+
+  text-align: center;
+
+  .header {
+    font-size: clamp(1.75rem, 3.5vw + 0.75rem, 2.5rem);
+  }
+
+  .description {
+    margin: var(--spacer-xs) 1rem;
+    max-width: 40rem;
+
+    @include respond-to(lg) {
+      margin: var(--spacer-xs) auto;
+    }
+  }
+
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .filters {
+    margin: var(--spacer-sm) 0;
+    flex-wrap: wrap;
+    font-weight: bold;
+
+    .filterButton {
+      font-size: 0.8em;
+      padding: 0.25rem 1rem;
+      margin: 0 1rem;
+    }
+
+    .active {
+      background: yellowgreen;
+    }
+  }
+}
+
+// STORE UNAVAILABLE NOTICE
+.storeUnavailable {
+  margin: var(--spacer-md);
+
+  .unavailableNotice {
+    margin: 1rem 0;
+  }
+
+  .previewGrid {
+    width: 100%;
+    flex: wrap;
+
+    .first,
+    .second {
+      grid-column: span 2;
+    }
+
+    .third,
+    .fourth {
+      display: none;
+    }
+
+    @include respond-to(lg) {
+      .third,
+      .fourth {
+        display: block;
+      }
+
+      .first,
+      .second,
+      .third,
+      .fourth {
+        grid-column: span 3;
+      }
+    }
+  }
+}

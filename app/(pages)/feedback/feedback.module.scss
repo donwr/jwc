@@ -1,0 +1,148 @@
+@import 'utils';
+
+.background {
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  padding: 5rem var(--layout-padding);
+  z-index: 2;
+
+  @include respond-to(lg) {
+    padding: 4rem var(--layout-padding);
+  }
+
+  .feedbackForm {
+    width: 100%;
+    max-width: 600px;
+    grid-column: span 12;
+    margin: 0 auto;
+
+    @include respond-to(lg) {
+      grid-column: span 6;
+    }
+
+    .formContainer {
+      padding: 2rem;
+      background: #222;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+    }
+
+    .formField {
+      margin-bottom: 1.5rem;
+
+      label {
+        color: #bbb;
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      .inputField {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #444;
+        background-color: #333;
+        color: #fff;
+        font-size: 1rem;
+        transition: border-color 0.2s ease;
+        text-transform: none;
+
+        &:focus {
+          border-color: #4a90e2;
+          outline: none;
+        }
+      }
+
+      textarea.inputField {
+        min-height: 150px;
+        resize: none;
+      }
+
+      .error {
+        color: #e74c3c;
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+      }
+    }
+
+    .submitButton {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 25px;
+      background-color: #fff;
+      color: #000;
+      font-size: 1.25rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      text-align: center;
+
+      &:disabled {
+        background: #555;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .feedbackPageSidebar {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    grid-column: span 12;
+    font-size: 0.8rem;
+
+    @include respond-to(lg) {
+      grid-column: span 6;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      max-width: 400px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .contactDetails {
+      line-height: 1.5;
+      font-weight: bold;
+
+      .socialIcons {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        i {
+          cursor: pointer;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feedback-container {
+  position: relative;
+  text-transform: uppercase;
+  font-family: var(--font-ibm-plex-mono);
+}

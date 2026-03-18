@@ -1,0 +1,23 @@
+@import 'utils';
+
+.terms {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 5rem var(--layout-padding);
+
+  @include respond-to(lg) {
+    padding: 4rem var(--layout-padding);
+  }
+
+  ul,
+  p {
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    @include respond-to(md) {
+      max-width: 60%;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import 'utils';
+
+.workoutContent {
+  padding: 4rem var(--layout-margin);
+
+  .backBtn {
+    display: flex;
+    font-size: 0.8rem;
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .hero {
+    padding: 0 var(--layout-padding);
+
+    .heroTopbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: var(--spacer-xs) 0;
+      border-bottom: solid 1px rgba(128, 128, 128, 0.5);
+    }
+
+    .heroContent {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 65vh;
+      height: 100%;
+
+      p {
+        max-width: 550px;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      h1,
+      p {
+        position: relative;
+        z-index: 2;
+      }
+
+      img,
+      .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 50%;
+      }
+
+      img {
+        z-index: 0;
+      }
+
+      .cover {
+        background-color: #000;
+        z-index: 1;
+      }
+    }
+  }
+
+  .details {
+    margin-top: var(--spacer-md);
+  }
+}

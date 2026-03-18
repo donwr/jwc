@@ -1,0 +1,26 @@
+@import 'utils';
+
+.grid {
+  gap: 3rem 1rem;
+}
+
+.slide {
+  grid-column: span 4;
+  height: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: transform 0.3s ease-in-out;
+
+  @include respond-to(md) {
+    grid-column: span 2;
+  }
+
+  @include respond-to(lg) {
+    grid-column: span 4;
+  }
+
+  @include respond-to(xl) {
+    grid-column: span 3;
+  }
+}

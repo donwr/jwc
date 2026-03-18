@@ -1,0 +1,85 @@
+.field {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--light-gray);
+  padding: 1rem 1.5rem;
+
+  @include desktop {
+    padding: desktop-vw(15px) desktop-vw(8px);
+  }
+
+  input {
+    width: 100%;
+    color: inherit; // Use inherited color for consistency
+  }
+
+  // Default inactive state
+  &:not(.active) input {
+    color: rgba(255, 255, 255, 0.52);
+  }
+
+  // Error state
+  &.error::after {
+    background-color: red;
+  }
+}
+
+.multiple {
+  display: flex;
+  flex-wrap: wrap;
+  gap: mobile-vw(4px);
+
+  @include desktop {
+    gap: desktop-vw(4px);
+  }
+
+  .header {
+    width: 100%;
+    margin-bottom: mobile-vw(20px);
+
+    @include desktop {
+      margin-bottom: desktop-vw(20px);
+    }
+  }
+
+  .option {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: mobile-vw(6px) mobile-vw(8px);
+    border-radius: mobile-vw(100px);
+    color: var(--white); // Default text color
+
+    @include desktop {
+      padding: desktop-vw(6px) desktop-vw(8px);
+      border-radius: desktop-vw(100px);
+    }
+
+    span {
+      position: relative;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    // Option background transition
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: var(--white);
+      border-radius: inherit;
+      clip-path: inset(100% 0 0 0);
+      transition: clip-path 400ms var(--gleasing);
+    }
+
+    // Selected or hover state
+    &.selected,
+    &:hover {
+      color: var(--black); // Change text color when selected/hovered
+
+      &::before {
+        clip-path: inset(0); // Show background on select/hover
+      }
+    }
+  }
+}

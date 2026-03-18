@@ -1,0 +1,69 @@
+.dropdown {
+  position: relative;
+  grid-column: 1/-1;
+  margin: calc(var(--spacer-xs) / 2) 0;
+  width: 100%;
+  .trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 mobile-vw(18px);
+    padding: mobile-vw(7px) mobile-vw(12px);
+    border-radius: mobile-vw(8px);
+    border: 2px solid var(--black);
+
+    @include desktop {
+      padding: desktop-vw(7px) desktop-vw(12px);
+      border-radius: desktop-vw(8px);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-color: var(--black);
+      clip-path: circle(0%);
+    }
+  }
+
+  .options {
+    position: absolute;
+    inset: 0;
+    top: calc(100% + mobile-vw(4px));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+
+    @include desktop {
+      top: calc(100% + desktop-vw(4px));
+    }
+
+    .option {
+      background-color: var(--theme-secondary);
+      color: var(--theme-primary);
+      width: 100%;
+      padding: 1rem;
+      position: relative;
+      text-align: center;
+
+      @include hover {
+        &:hover {
+          background-color: var(--theme-contrast);
+        }
+      }
+    }
+  }
+
+  &:not(.isOpened) {
+    .options {
+      pointer-events: none;
+      visibility: hidden;
+    }
+  }
+}

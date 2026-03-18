@@ -1,0 +1,169 @@
+@import 'utils';
+
+.menuHolder {
+  display: block;
+
+  @include respond-to(lg) {
+    display: none;
+  }
+
+  .menuInside {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 1s cubic-bezier(1, 0, 0, 1);
+    will-change: transform;
+    background-color: rgba(8, 8, 8, 0.89);
+    color: white;
+    z-index: 1200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .menuNavContainer {
+      position: relative;
+      top: 20%;
+      left: 10%;
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    .internalNavLinks {
+      li {
+        margin-bottom: 20px;
+        line-height: 1.1em;
+        transform: translate(-100%);
+        will-change: transform;
+        transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+        .link {
+          position: relative;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .active {
+          text-decoration: line-through; // Apply strikethrough for active links
+          color: var(--green); // Optional: Change color for active state
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: -16px;
+          }
+        }
+      }
+    }
+
+    .externalNavLinks {
+      margin-top: 80px; // Space between internal and external links
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 20px; // Similar spacing as internal links
+        font-size: 1rem;
+        line-height: 1.2em;
+        transform: translateX(-100%); // Start offscreen
+        will-change: transform;
+        transition: transform 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+        a {
+          display: block; // Ensures each link takes up its own line
+          text-transform: lowercase;
+          font-weight: bold;
+          text-decoration: none;
+          color: white; // Default color
+          position: relative;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #ff6347; // Accent color on hover
+          }
+
+          &:active {
+            color: #ff4500; // Slightly darker accent on click
+          }
+        }
+      }
+
+      // When the menu is open, animate the external nav links similarly to internal links
+      .menuInsideOpen & {
+        li {
+          transform: translateX(0); // Move into place
+          transition-duration: 0.8s;
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+
+          &:nth-child(1) {
+            transition-delay: 0.6s; // Delay after the last internal link
+          }
+
+          &:nth-child(2) {
+            transition-delay: 0.8s;
+          }
+
+          &:nth-child(3) {
+            transition-delay: 1s;
+          }
+        }
+      }
+    }
+
+    .policyLinks {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0; // Space above and below the links
+
+      .policyLink {
+        font-size: 0.875rem; // Small font size
+        color: white; // Adjust color as needed
+        text-decoration: none; // Remove underline
+
+        &:hover {
+          text-decoration: underline; // Underline on hover
+        }
+      }
+
+      .separator {
+        margin: 0 10px; // Space between the links
+        color: white; // Adjust color to match links
+        font-size: 0.875rem; // Match the font size of links
+      }
+    }
+  }
+
+  .menuInsideOpen {
+    transform: translateX(0);
+
+    .internalNavLinks {
+      @for $i from 0 through 4 {
+        li:nth-child(#{$i + 1}n) {
+          transition-delay: #{($i - 1) / 10 + 0.4}s;
+        }
+      }
+
+      li {
+        transform: translate(0);
+        transition-duration: 0.8s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      }
+    }
+
+    .externalNavLinks {
+      @for $i from 0 through 4 {
+        li:nth-child(#{$i + 1}n) {
+          transition-delay: #{($i - 1) / 10 + 0.4}s;
+        }
+      }
+
+      li {
+        opacity: 1;
+        transform: translate(0);
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      }
+    }
+  }
+}

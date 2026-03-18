@@ -1,0 +1,133 @@
+@import 'utils';
+
+.footer {
+  text-transform: uppercase;
+  background-color: #1a1a1a;
+  color: #f5f0eb;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+
+  .footerWrap {
+    .content {
+      min-height: 10rem;
+      width: 100%;
+      grid-gap: 0;
+
+      .subscription {
+        grid-column: span 4;
+        width: 100%;
+        padding: 0 var(--layout-margin);
+        border: solid 1px rgba(255, 255, 255, 0.08);
+
+        h4 {
+          text-align: center;
+          padding: 2rem;
+        }
+
+        @include respond-to(lg) {
+          grid-column: span 3;
+          order: 2;
+        }
+      }
+
+      .main {
+        margin: 0;
+        grid-column: span 4;
+        grid-gap: 0;
+        width: 100%;
+
+        @include respond-to(lg) {
+          order: 1;
+          grid-column: span 12;
+        }
+
+        ul {
+          list-style-type: none;
+          text-decoration: none;
+        }
+
+        ul,
+        p {
+          font-size: 0.75rem;
+          color: rgba(255, 255, 255, 0.4);
+        }
+
+        .info {
+          margin: 0;
+          grid-column: span 4;
+          width: 100%;
+          border-bottom: solid 1px rgba(255, 255, 255, 0.08);
+
+          @include respond-to(lg) {
+            grid-column: span 12;
+          }
+
+          .help {
+            margin: var(--spacer-xs);
+            grid-column: span 3;
+          }
+
+          .more {
+            margin: var(--spacer-xs);
+            grid-column: span 2;
+          }
+
+          .text {
+            margin: var(--spacer-xs);
+            grid-column: span 7;
+
+            h5 {
+              color: rgba(255, 255, 255, 0.3);
+              font-size: 0.7rem;
+              letter-spacing: 0.1em;
+            }
+          }
+        }
+
+        .details {
+          border-bottom: solid 1px rgba(255, 255, 255, 0.08);
+          grid-column: span 4;
+
+          @include respond-to(lg) {
+            grid-column: span 5;
+          }
+
+          .detailsWrap {
+            margin: var(--spacer-xs);
+
+            .detailLinks {
+              margin: 1rem auto;
+              display: flex;
+              flex-wrap: wrap;
+              list-style-type: none;
+
+              li {
+                margin: 0 1rem;
+              }
+            }
+          }
+        }
+
+        .terms {
+          grid-column: span 4;
+
+          @include respond-to(lg) {
+            grid-column: span 7;
+          }
+
+          .termsWrap {
+            margin: var(--spacer-xs);
+
+            h5 {
+              color: rgba(255, 255, 255, 0.6);
+            }
+
+            p {
+              color: rgba(255, 255, 255, 0.3);
+            }
+          }
+        }
+      }
+    }
+  }
+}

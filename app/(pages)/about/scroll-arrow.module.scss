@@ -1,0 +1,29 @@
+// components/ScrollArrow.module.scss
+.arrowDown {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: bounce 1.5s infinite;
+  font-size: 1.5rem;
+  color: #9b9b9bbd;
+  z-index: 3;
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}

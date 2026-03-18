@@ -1,0 +1,96 @@
+// menu-button.module.scss
+@import 'utils';
+
+.menuButtonWrap {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  top: 15px;
+  z-index: 1500;
+  will-change: transform;
+  transition:
+    all 0.2s ease,
+    transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.menuButtonWrapOpen {
+  transition-delay: 0.4s;
+  transform: translateX(-10px);
+}
+
+.hamburger {
+  padding: 0;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.hamburgerBox {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburgerInner {
+  display: block;
+  top: 50%;
+  margin-top: -1px;
+
+  &,
+  &::before,
+  &::after {
+    width: 24px;
+    height: 2px;
+    background-color: #5f5f5f;
+    position: absolute;
+    transition: transform 0.15s ease;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+  }
+
+  &::before {
+    top: -6px;
+    transition: transform 0.2s ease-out;
+  }
+
+  &::after {
+    bottom: -6px;
+    transition: transform 0.2s ease-out;
+  }
+}
+
+// Active state
+.isActive {
+  .hamburgerInner {
+    background-color: transparent; // This makes the middle line disappear
+    transform: rotate(180deg);
+
+    &::before {
+      transform: translate3d(0, 6px, 0) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate3d(0, -6px, 0) rotate(-45deg);
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .menuButtonWrap {
+    display: none;
+  }
+}

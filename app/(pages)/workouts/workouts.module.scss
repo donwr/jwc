@@ -1,0 +1,144 @@
+@import 'utils';
+
+.page {
+  text-transform: uppercase;
+
+  .hero {
+    padding: 0 var(--layout-margin);
+    position: relative;
+    height: 100%;
+    padding-top: 72px;
+
+    @include respond-to(md) {
+      padding-top: 2rem;
+    }
+
+    .backgroundImage {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .backgroundCover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #000;
+      opacity: 70%;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      padding: var(--spacer-md) 0;
+
+      .h1 {
+        padding: 1rem 0;
+        font-size: clamp(1rem, 4vh, 2rem);
+
+        @include respond-to(lg) {
+          font-size: clamp(2rem, 5vh, 4rem);
+        }
+      }
+
+      .description {
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      .cta {
+        margin: var(--spacer-sm) 0;
+        padding: 1.5rem 2rem;
+        background-color: var(--green);
+        color: #000;
+        border-radius: 2.5rem;
+      }
+    }
+  }
+
+  .h2 {
+    margin: var(--spacer-md) 0;
+    font-size: clamp(2rem, 4vh, 6rem);
+  }
+
+  .workouts {
+    width: 100%;
+    margin: 0;
+
+    .workoutCard {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      border: solid 1px rgba(53, 53, 53, 0.74);
+      font-weight: bold;
+      padding: 1rem 2rem;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+
+      &:hover {
+        background-color: #fff;
+        /* Change to your preferred background color */
+        color: #000;
+        /* Change to your preferred text color */
+
+        .arrowRight {
+          transform: rotate(-45deg) translate(5px, -5px);
+          /* Rotates and moves arrow towards the top-right */
+        }
+      }
+
+      .arrowRight {
+        transition: transform 0.3s ease;
+      }
+
+      .workoutCardIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          height: 1.5rem;
+          width: 1.5rem;
+
+          @include respond-to(lg) {
+            height: 2.5rem;
+            width: 2.5rem;
+          }
+        }
+      }
+
+      .workoutDetails {
+        padding: 0rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .program {
+          padding: 0.5rem 0;
+          font-size: 1rem;
+          color: #c8a961;
+
+          @include respond-to(lg) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    padding: var(--layout-padding);
+  }
+}

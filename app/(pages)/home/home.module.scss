@@ -1,0 +1,870 @@
+@import 'utils';
+
+// ─── DESIGN TOKENS ─────────────────────────────────────
+$cream: #f5f0eb;
+$cream-dark: #e8e2da;
+$text: #1a1a1a;
+$text-muted: #6b6560;
+$accent: #8b8178;
+$border: rgba(0, 0, 0, 0.08);
+
+// ─── PAGE ──────────────────────────────────────────────
+.page {
+  overflow-x: hidden;
+  background-color: $cream;
+  color: $text;
+}
+
+// ─── PLACEHOLDER IMAGES ────────────────────────────────
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  background-color: $cream-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-family: var(--font-header);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $accent;
+  }
+}
+
+.placeholderImageDark {
+  @extend .placeholderImage;
+  background-color: #c8c0b8;
+}
+
+.placeholderImageTall {
+  @extend .placeholderImage;
+  min-height: 450px;
+
+  @include respond-to(md) {
+    min-height: 550px;
+  }
+}
+
+// ─── PILL BUTTON ───────────────────────────────────────
+.pillBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem 1.8rem;
+  border: 1.5px solid $text;
+  border-radius: 100px;
+  font-family: var(--font-header);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $text;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    background: $text;
+    color: $cream;
+  }
+}
+
+// ─── HERO ──────────────────────────────────────────────
+.heroSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 1.5rem 3rem;
+  background-color: $cream;
+
+  @include respond-to(md) {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 4rem;
+  }
+}
+
+.heroLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 0;
+  margin-bottom: 2rem;
+
+  @include respond-to(md) {
+    padding-right: 3rem;
+    margin-bottom: 0;
+  }
+}
+
+.heroRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond-to(md) {
+    justify-content: flex-end;
+  }
+}
+
+.heroImageMain {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+
+  .placeholderImage {
+    min-height: 100%;
+  }
+}
+
+.heroTitle {
+  font-family: var(--font-header);
+  font-size: clamp(2.5rem, 6vw + 0.5rem, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: $text;
+}
+
+.heroTitleAccent {
+  color: $accent;
+}
+
+.heroSubtitle {
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: $text-muted;
+  max-width: 420px;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-radius: 100px;
+  font-family: var(--font-header);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $cream !important;
+  background: $text !important;
+  border: 1.5px solid $text !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    background: transparent !important;
+    color: $text !important;
+  }
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-radius: 100px;
+  font-family: var(--font-header);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text !important;
+  background: transparent !important;
+  border: 1.5px solid $text !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    background: $text !important;
+    color: $cream !important;
+  }
+}
+
+// ─── MARQUEE ───────────────────────────────────────────
+.marqueeSection {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: $cream-dark;
+  padding: 1.2rem 0;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+}
+
+.marqueeTrack {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+
+.marqueeItem {
+  font-family: var(--font-header);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $text;
+  margin-right: 0.5rem;
+}
+
+.marqueeStar {
+  color: $accent;
+  margin: 0 1rem;
+  font-size: 0.7em;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// ─── ABOUT / INTRO ─────────────────────────────────────
+.aboutSection {
+  padding: 6rem 1.5rem;
+
+  @include respond-to(md) {
+    padding: 8rem 4rem;
+  }
+}
+
+.aboutContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.aboutHeading {
+  font-family: var(--font-header);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: -0.01em;
+}
+
+.aboutHeadingAccent {
+  color: $accent;
+}
+
+.aboutImageRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  @include respond-to(md) {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.aboutImageSmall {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  @include respond-to(md) {
+    width: 180px;
+  }
+
+  .placeholderImage,
+  .placeholderImageDark {
+    min-height: 100%;
+  }
+}
+
+.aboutBody {
+  flex: 1;
+  text-align: center;
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: $text-muted;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// ─── IMAGE SPLIT ───────────────────────────────────────
+.splitSection {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include respond-to(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.splitLeft,
+.splitRight {
+  position: relative;
+  overflow: hidden;
+
+  .placeholderImageTall {
+    min-height: 400px;
+
+    @include respond-to(md) {
+      min-height: 500px;
+    }
+  }
+}
+
+.splitLeft {
+  .placeholderImageTall {
+    background-color: #3a3530;
+    span {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.splitRight {
+  .placeholderImageTall {
+    background-color: #b5ada5;
+  }
+}
+
+.splitBtn {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.7rem 2rem;
+  border-radius: 100px;
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $text;
+  background: $cream;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
+  z-index: 2;
+
+  &:hover {
+    background: $text;
+    color: $cream;
+  }
+}
+
+// ─── PROBLEM / SYSTEM SECTION ──────────────────────────
+.problemSection {
+  padding: 6rem 1.5rem;
+  background-color: $cream;
+
+  @include respond-to(md) {
+    padding: 8rem 4rem;
+  }
+}
+
+.problemLayout {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @include respond-to(md) {
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+.problemImageCol {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 380px;
+
+  @include respond-to(md) {
+    width: 40%;
+  }
+
+  .placeholderImageTall {
+    min-height: 400px;
+  }
+}
+
+.problemTextCol {
+  flex: 1;
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: $text-muted;
+    margin-bottom: 1rem;
+  }
+}
+
+.problemHeading {
+  font-family: var(--font-header);
+  font-size: clamp(1.75rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.problemHeadingAccent {
+  color: $accent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.focusAreas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+
+  span {
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 100px;
+    font-size: 0.8rem;
+    color: $text-muted;
+    text-transform: none;
+    font-family: var(--font-primary);
+  }
+}
+
+// ─── HOW IT WORKS ──────────────────────────────────────
+.howSection {
+  padding: 6rem 1.5rem;
+  background-color: $cream-dark;
+
+  @include respond-to(md) {
+    padding: 8rem 4rem;
+  }
+}
+
+.howContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.howLabel {
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: $accent;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.howHeading {
+  font-family: var(--font-header);
+  font-size: clamp(1.75rem, 3.5vw, 3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.01em;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @include respond-to(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.stepCard {
+  padding: 2rem;
+  background: $cream;
+  border-radius: 0;
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: $text-muted;
+  }
+}
+
+.stepNumber {
+  font-family: var(--font-header);
+  font-size: 3rem;
+  font-weight: 700;
+  color: $cream-dark;
+  margin-bottom: 1rem;
+  line-height: 1;
+  // using the -webkit-text-stroke trick for outlined number
+  -webkit-text-stroke: 1.5px $accent;
+  color: transparent;
+}
+
+// ─── OFFERS SECTION ────────────────────────────────────
+.offersSection {
+  padding: 6rem 1.5rem;
+  background-color: $cream;
+
+  @include respond-to(md) {
+    padding: 8rem 4rem;
+  }
+}
+
+.offersContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.offersLabel {
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: $accent;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.offersHeading {
+  font-family: var(--font-header);
+  font-size: clamp(1.75rem, 3.5vw, 3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.offersGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @include respond-to(lg) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+}
+
+.offerCard {
+  padding: 2.5rem 2rem;
+  background: $cream-dark;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-family: var(--font-header);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 1.5rem;
+
+    li {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: $text-muted;
+      padding: 0.3rem 0;
+      padding-left: 1.2rem;
+      position: relative;
+
+      &::before {
+        content: '—';
+        position: absolute;
+        left: 0;
+        color: $accent;
+      }
+    }
+  }
+}
+
+.offerCardFeatured {
+  background: $text;
+  color: $cream;
+
+  .offerSubtitle {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  ul li {
+    color: rgba(255, 255, 255, 0.7);
+    &::before {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  .packageItem {
+    border-color: rgba(255, 255, 255, 0.1);
+    strong {
+      color: $cream;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .offerBtn {
+    border-color: $cream;
+    color: $cream;
+
+    &:hover {
+      background: $cream;
+      color: $text;
+    }
+  }
+}
+
+.offerSubtitle {
+  font-style: italic;
+  color: $accent;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.offerPrice {
+  font-family: var(--font-header);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.offerBtn {
+  margin-top: auto;
+  align-self: flex-start;
+  display: inline-flex;
+  padding: 0.65rem 1.5rem;
+  border: 1.5px solid $text;
+  border-radius: 100px;
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text;
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $text;
+    color: $cream;
+  }
+}
+
+.packages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.packageItem {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid $border;
+
+  strong {
+    font-family: var(--font-header);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: $text-muted;
+    margin: 0;
+  }
+}
+
+// ─── FAQ SECTION ───────────────────────────────────────
+.faqSection {
+  padding: 6rem 1.5rem;
+  background-color: $cream-dark;
+
+  @include respond-to(md) {
+    padding: 8rem 4rem;
+  }
+}
+
+.faqContainer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faqLabel {
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: $accent;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.faqHeading {
+  font-family: var(--font-header);
+  font-size: clamp(1.75rem, 3.5vw, 3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqItem {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.25rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: $text;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: none;
+  gap: 1rem;
+  font-family: var(--font-primary);
+}
+
+.faqIcon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: $accent;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.faqAnswer {
+  padding: 0 0 1.25rem;
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: $text-muted;
+  }
+}
+
+.faqOpen {
+  .faqQuestion {
+    color: $accent;
+  }
+}
+
+// ─── CTA SECTION ───────────────────────────────────────
+.ctaSection {
+  padding: 6rem 1.5rem;
+  text-align: center;
+  background-color: $text;
+  color: $cream;
+
+  @include respond-to(md) {
+    padding: 8rem 4rem;
+  }
+}
+
+.ctaContainer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaHeading {
+  font-family: var(--font-header);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.ctaHeadingAccent {
+  color: $accent;
+}
+
+.ctaSubheading {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2.5rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .primaryBtn {
+    background: $cream !important;
+    color: $text !important;
+    border-color: $cream !important;
+
+    &:hover {
+      background: transparent !important;
+      color: $cream !important;
+    }
+  }
+
+  .secondaryBtn {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    color: $cream !important;
+
+    &:hover {
+      background: $cream !important;
+      color: $text !important;
+      border-color: $cream !important;
+    }
+  }
+}

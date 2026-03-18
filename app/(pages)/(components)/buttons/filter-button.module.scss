@@ -1,0 +1,23 @@
+.filterButton {
+  margin: 0 0.5rem;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover,
+  &.selected {
+    background-color: #00ff6a;
+    color: white;
+    border-color: #00ff6a;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,67 @@
+$breakpoints: (
+  xs: 360px,
+  // Extra small devices (phones, portrait mode)
+  sm: 576px,
+  // Small devices (phones)
+  md: 768px,
+  // Medium devices (tablets)
+  lg: 992px,
+  // Large devices (desktops, small laptops)
+  xl: 1200px,
+  // Extra large devices (large desktops)
+  xxl: 1400px // Extra extra large devices (larger desktops),,,,,,
+);
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. Available breakpoints: #{map-keys($breakpoints)}.";
+  }
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.mobile-only {
+  @include respond-to(lg) {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  @include respond-to(md) {
+    display: none !important;
+  }
+}
+.mobile-only {
+  @include respond-to(lg) {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  @include respond-to(md) {
+    display: none !important;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

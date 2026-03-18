@@ -1,0 +1,96 @@
+@import 'utils';
+
+.nav {
+  position: fixed;
+  font-size: 0.75rem;
+  height: 4rem;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+
+  @include respond-to(lg) {
+    height: 3.5rem;
+  }
+
+  &.scrolled {
+    background-color: rgba(245, 240, 235, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    transition: background-color 0.3s ease;
+  }
+
+  .navWrapper {
+    z-index: 2;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0 1.5rem;
+
+    @include respond-to(lg) {
+      justify-content: space-between;
+      padding: 0 2.5rem;
+    }
+
+    .group {
+      display: block;
+
+      @include respond-to(lg) {
+        display: flex;
+      }
+
+      .logoText {
+        display: flex;
+        justify-content: center;
+        font-family: var(--font-header);
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.25em;
+        color: inherit;
+
+        @include respond-to(lg) {
+          font-size: 1.1rem;
+        }
+
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .list {
+      display: none;
+
+      .link {
+        margin-left: 28px;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        font-size: 0.7rem;
+      }
+
+      @include respond-to(lg) {
+        display: inline-flex;
+      }
+    }
+
+    .contact {
+      display: none;
+
+      @include respond-to(lg) {
+        display: flex;
+      }
+
+      a {
+        font-weight: 600;
+        margin: 0 0.5rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+      }
+    }
+  }
+}

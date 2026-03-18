@@ -1,0 +1,159 @@
+.page {
+  scroll-behavior: smooth;
+}
+
+.heroSection {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #00000065, #0d0d0d);
+  z-index: 2;
+}
+
+.arrowDown {
+  position: absolute;
+  bottom: 1rem;
+  transform: translateX(50%);
+  right: 50%;
+  animation: bounce 1.5s infinite;
+  font-size: 1.5rem; // Adjust size as needed
+  color: #9b9b9bbd;
+  z-index: 3;
+}
+
+.heroContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem 0;
+
+  .contactBtn {
+    margin: 0 auto;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  padding: 0 var(--layout-margin) 0;
+
+  @media (min-width: 768px) {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    flex-direction: row;
+  }
+}
+
+.sectionLeft {
+  flex: 1;
+}
+
+.sectionRight {
+  flex: 1;
+}
+
+.offset {
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.subheader {
+  font-size: 1.25rem;
+  color: #ffb400;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+// SECTION II
+.sectionTwoLeft {
+  height: 400px;
+  width: 100%;
+  position: relative;
+
+  .imageOne {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 60%;
+    object-fit: contain;
+    z-index: 2;
+  }
+
+  .imageTwo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80%;
+    width: 40%;
+    object-fit: cover;
+    z-index: 1;
+  }
+}
+
+// SECTION III
+.gradient {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}

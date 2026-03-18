@@ -1,0 +1,51 @@
+@import 'utils';
+
+.eventDisplay {
+  background-color: var(--black);
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  z-index: 100;
+  border-bottom: 1px solid gray;
+
+  @include respond-to(xs) {
+    font-size: 0.8rem;
+  }
+
+  @include respond-to(lg) {
+    padding-top: 0;
+    display: block;
+    min-width: 25rem;
+  }
+
+  .eventTitle {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .eventContent {
+    transition:
+      opacity 1s,
+      transform 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 0;
+
+    h3 {
+      margin: 0 1rem;
+    }
+  }
+
+  .eventName {
+    margin-bottom: 8px;
+  }
+
+  .eventDate,
+  .otherText {
+    text-align: center;
+    color: #00ff6a;
+  }
+}

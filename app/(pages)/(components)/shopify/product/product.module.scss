@@ -1,0 +1,94 @@
+@import 'utils';
+/* Assuming you have a utils file for mixins or variables */
+
+.productCard {
+  grid-column: span 4;
+  height: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: transform 0.3s ease-in-out;
+  max-width: 400px;
+
+  @include respond-to(md) {
+    grid-column: span 2;
+  }
+
+  @include respond-to(lg) {
+    grid-column: span 4;
+  }
+
+  @include respond-to(xl) {
+    grid-column: span 3;
+  }
+
+  .productTop {
+    padding: var(--spacer-xs);
+    border: 1px solid rgba(128, 128, 128, 0.5);
+
+    .productButtons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .likeButton {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 0.25rem;
+        }
+      }
+
+      .actionButton {
+        svg {
+          transition:
+            transform 0.3s ease-in-out,
+            fill 0.3s ease-in-out;
+        }
+      }
+    }
+
+    .productImage {
+      overflow: hidden;
+
+      img {
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  /* Scale the image when the card is hovered */
+  &:hover .productImage img {
+    transform: scale(1.02);
+  }
+
+  .productDetails {
+    font-size: 0.8rem;
+
+    .category {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0 0.5rem 0;
+
+      .separator {
+        height: 0.2rem;
+        width: 0.2rem;
+        border-radius: 100%;
+        background-color: #fff;
+        margin: 0 0.4rem;
+      }
+    }
+
+    .productInfo {
+      display: flex;
+      justify-content: space-between;
+
+      .productName {
+        color: #00ff6a;
+      }
+    }
+  }
+}
