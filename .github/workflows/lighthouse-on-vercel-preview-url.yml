@@ -21,7 +21,7 @@ jobs:
    
           vercel_team_id: 'team_z447r8aZZPo7yVqodTLwgp3Q'
           vercel_project_id: ${{ secrets.VERCEL_PROJECT_ID }}
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v6.0.2
       - name: Audit preview URL with Lighthouse
         id: lighthouse_audit
         uses: treosh/lighthouse-ci-action@v12
