@@ -3,8 +3,6 @@ import { EmailTemplate } from 'components/email/email-template'
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY || '')
-
 interface FormData {
   firstName: string
   lastName: string
@@ -15,11 +13,11 @@ interface FormData {
 
 export async function POST(request: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY)
     const { firstName, lastName, email, message, rating }: FormData =
       await request.json()
 
     const type = 'Feedback Form'
-    // Step 2: Attempt to send the email
     const { data, error } = await resend.emails.send({
       from: 'Jess Training <no-reply@jesstrainer.de>',
       to: ['jess@trainer.de'],

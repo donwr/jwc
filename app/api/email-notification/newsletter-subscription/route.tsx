@@ -3,8 +3,6 @@ import { EmailTemplate } from 'components/email/email-template'
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY || '')
-
 interface SubscriptionData {
   firstName: string
   email: string
@@ -12,6 +10,7 @@ interface SubscriptionData {
 
 export async function POST(request: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY)
     const { firstName, email }: SubscriptionData = await request.json()
     const type = 'Newsletter Subscription'
 
