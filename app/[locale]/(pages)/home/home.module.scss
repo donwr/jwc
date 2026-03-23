@@ -7,6 +7,8 @@ $text: #1a1a1a;
 $text-muted: #6b6560;
 $accent: #8b8178;
 $border: rgba(0, 0, 0, 0.08);
+$radius: 8px;
+$radius-lg: 12px;
 
 // ─── PAGE ──────────────────────────────────────────────
 .page {
@@ -21,6 +23,7 @@ $border: rgba(0, 0, 0, 0.08);
   height: 100%;
   min-height: 300px;
   background-color: $cream-dark;
+  border-radius: $radius-lg;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,6 +119,7 @@ $border: rgba(0, 0, 0, 0.08);
   max-width: 500px;
   aspect-ratio: 3/4;
   overflow: hidden;
+  border-radius: $radius-lg;
 
   .placeholderImage {
     min-height: 100%;
@@ -284,6 +288,7 @@ $border: rgba(0, 0, 0, 0.08);
   max-width: 200px;
   aspect-ratio: 3/4;
   overflow: hidden;
+  border-radius: $radius-lg;
   flex-shrink: 0;
 
   @include respond-to(md) {
@@ -325,6 +330,7 @@ $border: rgba(0, 0, 0, 0.08);
 .splitRight {
   position: relative;
   overflow: hidden;
+  border-radius: $radius-lg;
 
   .placeholderImageTall {
     min-height: 400px;
@@ -508,7 +514,7 @@ $border: rgba(0, 0, 0, 0.08);
 .stepCard {
   padding: 2rem;
   background: $cream;
-  border-radius: 0;
+  border-radius: $radius;
 
   h3 {
     font-size: 1.1rem;
@@ -625,6 +631,7 @@ $border: rgba(0, 0, 0, 0.08);
   background: $text;
   color: $cream;
   border-color: rgba(255, 255, 255, 0.1);
+  border-radius: $radius-lg;
   margin: -1px 0;
   padding: 0 2rem;
 
@@ -896,6 +903,45 @@ $border: rgba(0, 0, 0, 0.08);
   }
 }
 
+// ─── TESTIMONIALS PLACEHOLDER ──────────────────────────
+.testimonialsSection {
+  padding: 5rem 1.5rem;
+  text-align: center;
+
+  @include respond-to(md) {
+    padding: 6rem 4rem;
+  }
+}
+
+.testimonialsContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonialsLabel {
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: $accent;
+  margin-bottom: 0.75rem;
+}
+
+.testimonialsHeading {
+  font-family: var(--font-header);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.testimonialsNote {
+  font-size: 0.9rem;
+  color: $accent;
+  font-style: italic;
+  line-height: 1.6;
+}
+
 // ─── CTA SECTION ───────────────────────────────────────
 .ctaSection {
   padding: 6rem 1.5rem;
@@ -1045,6 +1091,7 @@ $border: rgba(0, 0, 0, 0.08);
 .whatMakesDifferentCard {
   padding: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: $radius;
   font-size: clamp(0.9rem, 1.3vw, 1rem);
   line-height: 1.5;
 
@@ -1056,6 +1103,7 @@ $border: rgba(0, 0, 0, 0.08);
 // ─── PRICING BOX ──────────────────────────────────────
 .pricingBox {
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: $radius;
   padding: 1.25rem;
   margin: 1.5rem 0;
   display: flex;

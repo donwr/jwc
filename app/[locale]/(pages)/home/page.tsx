@@ -7,6 +7,7 @@ import HowItWorksSection from './(components)/health-matters'
 import MarqueeSection from './(components)/marquee'
 import OffersSection from './(components)/service'
 import PersonalTrainerIntro from './(components)/personal-trainer'
+import TestimonialsPlaceholder from './(components)/testimonials-placeholder'
 import WhatMakesDifferentSection from './(components)/what-makes-different'
 import styles from './home.module.scss'
 
@@ -21,6 +22,7 @@ export default async function Home() {
         <WhatMakesDifferentSection />
         <HowItWorksSection />
         <OffersSection />
+        <TestimonialsPlaceholder />
         <FAQSection />
         <CTASection />
       </div>
