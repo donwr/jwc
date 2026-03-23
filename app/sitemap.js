@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 export default function sitemap() {
-  const appDirectory = path.join(process.cwd(), 'app/(pages)')
+  const appDirectory = path.join(process.cwd(), 'app/[locale]/(pages)')
   const folders = fs
     .readdirSync(appDirectory, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
@@ -18,7 +18,8 @@ export default function sitemap() {
     },
     ...folders
       .filter((folder) => {
-        return fs.existsSync(path.join(appDirectory, folder, 'page.js'))
+        return fs.existsSync(path.join(appDirectory, folder, 'page.js')) ||
+          fs.existsSync(path.join(appDirectory, folder, 'page.tsx'))
       })
       .map((folder) => {
         return {
