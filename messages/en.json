@@ -1,0 +1,348 @@
+{
+  "metadata": {
+    "title": "Jess — Personal Training Berlin",
+    "titleTemplate": "%s — Jess Personal Training",
+    "description": "Personal training, coaching and custom training plans in Berlin. Strength building, weight loss, functional training, calisthenics, mobility — with structure, progression and real coaching."
+  },
+  "nav": {
+    "offers": "Services",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookCall": "Book a call"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "YOU'VE TRIED THIS",
+      "titleLine2": "A HUNDRED",
+      "titleAccent": "TIMES.",
+      "subtitle": "Personal training, coaching and custom training plans in Berlin — for people who are tired of starting over again and again.",
+      "ctaButton": "Book your free call now",
+      "offersButton": "View services",
+      "imageAlt": "Trainer photo"
+    },
+    "marquee": {
+      "items": ["STRUCTURE", "CONSISTENCY", "COACHING", "RESULTS", "STRENGTH", "PROGRESSION"]
+    },
+    "personalTrainer": {
+      "titleLine1": "INDIVIDUAL COACHING,",
+      "titleAccent": "TAILORED TO YOU",
+      "description": "I'm Jess, a personal trainer in Berlin with a background in performance and athletic training. I work with people who've started and stopped more times than they can count — and finally need a system that sticks.",
+      "button": "Learn more",
+      "imageAlt1": "Training",
+      "imageAlt2": "Coaching"
+    },
+    "imageSplit": {
+      "imageAlt1": "Training Session",
+      "imageAlt2": "Gym / Equipment",
+      "button1": "Book a call",
+      "button2": "View services"
+    },
+    "problem": {
+      "titleLine1": "YOU DON'T NEED",
+      "titleAccent": "MOTIVATION.",
+      "titleLine3": "YOU NEED A SYSTEM.",
+      "paragraph1": "Most people think they fail because of discipline. They don't. They fail because of no plan, no structure, and no one there to notice when they stop.",
+      "paragraph2": "Motivation gets you through day one. Structure gets you through day one hundred. That's where I come in.",
+      "imageAlt": "Motivation photo",
+      "focusAreas": {
+        "strength": "Strength",
+        "weightLoss": "Weight Loss",
+        "functional": "Functional Training",
+        "calisthenics": "Calisthenics",
+        "mobility": "Mobility",
+        "stability": "Stability"
+      }
+    },
+    "howItWorks": {
+      "label": "HOW WE START",
+      "heading": "THREE STEPS TO GET STARTED",
+      "step1": {
+        "title": "Initial consultation",
+        "description": "We talk about your goal, your level, your daily life and what hasn't worked before. No sales pitch — just clarity."
+      },
+      "step2": {
+        "title": "Your plan",
+        "description": "You get a training structure tailored to you. Exercises, sets, progression — all clearly laid out."
+      },
+      "step3": {
+        "title": "Stay on track",
+        "description": "You train. I'm there. If something doesn't fit, we adjust. If you disappear, I reach out. That's the difference."
+      }
+    },
+    "offers": {
+      "label": "SERVICES",
+      "heading": "FIND YOUR PATH",
+      "personalTraining": {
+        "title": "Personal Training",
+        "subtitle": "For you, if you can't make progress on your own anymore.",
+        "features": [
+          "Sessions tailored to your goal and level",
+          "Direct technique coaching in real time",
+          "Adapted to how you feel on the day",
+          "A real person who notices when you slip"
+        ],
+        "button": "Request personal training"
+      },
+      "trainingPlan": {
+        "title": "Custom Training Plan",
+        "subtitle": "For you, if you can train — but don't know what to do.",
+        "features": [
+          "Training plan for 4–6 weeks",
+          "Tailored to your goal, level & equipment",
+          "Clear exercises, sets, reps",
+          "Questionnaire + initial consultation included"
+        ],
+        "price": "€59",
+        "button": "Start your training plan"
+      },
+      "onlineCoaching": {
+        "title": "Online Coaching",
+        "subtitle": "A plan + someone who stays on it.",
+        "packages": {
+          "weeks4": {
+            "title": "4 weeks — €99",
+            "description": "Training plan + initial consultation + WhatsApp support + 1 check-up"
+          },
+          "weeks8": {
+            "title": "8 weeks — €179",
+            "description": "Longer support, multiple adjustments possible"
+          },
+          "weeks12": {
+            "title": "12 weeks — €249",
+            "description": "Long-term structure + check-up calls as needed"
+          }
+        },
+        "button": "Start online coaching"
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "COMMON QUESTIONS",
+      "items": [
+        {
+          "question": "I've started and stopped so many times. Why should this time be different?",
+          "answer": "Because this time you're not alone. My coaching is designed to catch the moment when most people quit: week three, when life hits back. That's what the plan, the adjustments, and having me in your corner are for."
+        },
+        {
+          "question": "I'm totally out of shape. Is that embarrassing?",
+          "answer": "No. Most of my clients start exactly like that. I adjust everything to your current level — you don't need to be good at anything to get started."
+        },
+        {
+          "question": "How does the custom training plan work?",
+          "answer": "You book, fill out a short questionnaire, and we have an initial consultation. Then I create your plan — tailored to your goal, your level, your equipment and your daily routine."
+        },
+        {
+          "question": "What if I can't train at some point?",
+          "answer": "It happens. And it's no reason to throw everything away. We adjust the plan if needed. That's exactly the difference compared to a standard plan from the internet."
+        },
+        {
+          "question": "Is the online coaching really personal?",
+          "answer": "Everything comes directly from me. No bot, no chatbot, no automated messages. When you write to me, I reply — usually within 10 hours."
+        },
+        {
+          "question": "Can I switch from the training plan to personal training?",
+          "answer": "Yes, anytime. If you notice you want more direct support, we simply switch."
+        }
+      ]
+    },
+    "cta": {
+      "titleLine1": "YOU'VE RESTARTED",
+      "titleLine2": "ENOUGH.",
+      "titleAccent": "START STICKING WITH IT.",
+      "subtitle": "A quick call. No sales pitch. We figure out what makes sense for you — and whether we're a good fit.",
+      "primaryButton": "Book your free call now",
+      "secondaryButton": "Choose a service"
+    }
+  },
+  "about": {
+    "heroTitle": "About Jess",
+    "section1": {
+      "subheader": "Background",
+      "header": "Performance & Athletic Training",
+      "description1": "I'm Jess, a personal trainer in Berlin with a background in performance and athletic training. My focus is on strength building, general fitness, weight loss, functional training, calisthenics, stability and mobility.",
+      "description2": "I don't work with aimless training or motivational slogans — I work with structure, progression and a system that fits you."
+    },
+    "section2": {
+      "subheader": "My approach",
+      "header": "Structure over motivation",
+      "description1": "I work with people who've started and stopped many times before. Who aren't lazy — but overwhelmed by plans that don't fit their life, and left alone with good intentions that disappear after two weeks.",
+      "description2": "My job isn't to yell you through a workout. My job is to build a training structure with you that holds up even when Tuesday gets stressful, your back hurts, or you haven't trained for three days."
+    },
+    "section3": {
+      "subheader": "For you",
+      "header": "Real coaching that fits",
+      "description1": "Whether you want to get stronger, lose fat, improve your fitness or simply train consistently again — we'll build a path together that you can actually follow through on.",
+      "description2": "No standard plan. No \"just push through.\" Instead, a system that fits your daily life, your body and your level — with someone who thinks along and stays on it."
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "description": "Send me a message or reach me through my channels. I'm here to support you on your fitness journey and answer all your questions.",
+    "email": "Email: jess@trainer.de",
+    "form": {
+      "firstName": "First Name *",
+      "lastName": "Last Name *",
+      "email": "Email *",
+      "phone": "Phone Number",
+      "message": "Message *",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "validation": {
+        "firstNameRequired": "First name is required",
+        "lastNameRequired": "Last name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email address",
+        "messageRequired": "Message is required"
+      },
+      "toast": {
+        "success": "Contact form submitted successfully!",
+        "error": "Failed to submit the contact form. Please try again.",
+        "genericError": "An error occurred while submitting the contact form."
+      }
+    }
+  },
+  "workouts": {
+    "heroTitle": "Personal Training, Training Plans & Online Coaching in Berlin",
+    "heroDescription": "Individual training with structure, progression and real coaching.",
+    "offersHeading": "My Services",
+    "categories": {
+      "personalTraining": {
+        "program": "Personal Training",
+        "description": "For you, if you can't make progress on your own anymore. 1:1 sessions with direct technique coaching and real-time corrections.",
+        "type": "1:1 Coaching",
+        "duration": "Flexible"
+      },
+      "trainingPlan": {
+        "program": "Custom Training Plan",
+        "description": "For you, if you know you can train — but not what. Your plan, clearly structured, tailored to you. €59",
+        "type": "Training Plan",
+        "duration": "4–6 weeks"
+      },
+      "onlineCoaching": {
+        "program": "Online Coaching",
+        "description": "For you, if you need a plan AND someone who stays on it. Training plan + ongoing support from €99.",
+        "type": "Online Support",
+        "duration": "4–12 weeks"
+      }
+    }
+  },
+  "feedback": {
+    "title": "Trainer Feedback",
+    "description": "Your feedback helps me improve my training programs. Please rate your experience and leave a testimonial.",
+    "form": {
+      "firstName": "First Name *",
+      "lastName": "Last Name *",
+      "email": "Email *",
+      "message": "Message *",
+      "rating": "Rating (1-5) *",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "validation": {
+        "firstNameRequired": "First name is required",
+        "lastNameRequired": "Last name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email",
+        "messageRequired": "Message is required",
+        "ratingRequired": "Rating is required"
+      },
+      "toast": {
+        "success": "Feedback submitted successfully!",
+        "error": "Failed to submit feedback. Please try again.",
+        "genericError": "An error occurred while submitting your feedback."
+      }
+    }
+  },
+  "footer": {
+    "contact": "CONTACT",
+    "emailLink": "Email",
+    "bookCall": "Book a call",
+    "offers": "SERVICES",
+    "personalTraining": "Personal Training",
+    "trainingPlan": "Training Plan",
+    "onlineCoaching": "Online Coaching",
+    "tagline": "STRUCTURE OVER MOTIVATION",
+    "privacy": "PRIVACY POLICY",
+    "terms": "TERMS OF SERVICE",
+    "heroHeading": "PERSONAL TRAINING IN BERLIN",
+    "heroDescription": "Individual training with structure, progression and real coaching — for people who are ready to finally stick with it."
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last Updated: September 8th, 2023",
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using Jess Personal Training's Website, you agree to comply with and be bound by these Terms of Service."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "content": "We reserve the right to change, modify, or revise these Terms of Service at any time."
+      },
+      "use": {
+        "title": "Use of the Service",
+        "content": "You agree to use the Service for lawful purposes and in accordance with these Terms of Service."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "In no event shall Jess Personal Training be liable for any indirect, incidental, special, consequential or punitive damages."
+      },
+      "law": {
+        "title": "Governing Law",
+        "content": "These Terms of Service are governed by the laws of the United States."
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "We reserve the right to terminate or suspend your account and access to the Service at our sole discretion, without notice, for conduct that we believe violates these Terms of Service or is harmful to other users of the Service, us, or third parties, or for any other reason."
+      },
+      "contactInfo": {
+        "title": "Contact Information",
+        "content": "For any questions about these Terms of Service, please contact us:",
+        "email": "By email: jess@trainer.de",
+        "phone": "By phone: (917) 426 0289"
+      }
+    },
+    "policy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last Updated: September 8, 2023",
+      "intro": "This Privacy Policy describes how Jess Personal Training collects, uses, and discloses your Personal Information when you visit or use our jesstrainer.de.",
+      "collect": {
+        "title": "Information We Collect",
+        "intro": "We collect various types of information for various purposes to provide and improve our service to you.",
+        "personalData": "Personal Data: We may ask you to provide us with certain personally identifiable information that can be used to contact or identify you.",
+        "usageData": "Usage Data: We may also collect information on how the service is accessed and used."
+      },
+      "use": {
+        "title": "How We Use Your Information",
+        "intro": "We use the collected data for various purposes:",
+        "items": [
+          "To provide and maintain our service.",
+          "To notify you about changes to our service.",
+          "To allow you to participate in interactive features of our service when you choose to do so."
+        ]
+      },
+      "disclosure": {
+        "title": "Disclosure of Data",
+        "intro": "We may disclose your Personal Information under the following circumstances:",
+        "legal": "Legal Requirements: To comply with a legal obligation.",
+        "transaction": "Transaction: In case of a sale, merger, or acquisition."
+      },
+      "security": {
+        "title": "Security",
+        "content": "The security of your data is important to us, but remember that no method of transmission over the Internet is 100% secure."
+      },
+      "changes": {
+        "title": "Changes to This Privacy Policy",
+        "content": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page."
+      },
+      "contactUs": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy, please contact us:",
+        "email": "By email: jess@trainer.de"
+      }
+    }
+  },
+  "menu": {
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

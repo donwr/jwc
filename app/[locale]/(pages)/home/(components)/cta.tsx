@@ -1,33 +1,37 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import CalButton from 'app/(pages)/(components)/buttons/cal-button'
 import styles from '../home.module.scss'
 
 const CTASection: React.FC = () => {
+  const t = useTranslations('home.cta')
+
   return (
     <section id="cta" className={styles.ctaSection}>
       <div className={styles.ctaContainer}>
         <h2 className={styles.ctaHeading}>
-          DU HAST GENUG
+          {t('titleLine1')}
           <br />
-          NEU ANGEFANGEN.
+          {t('titleLine2')}
           <br />
           <span className={styles.ctaHeadingAccent}>
-            FANG AN, DRANZUBLEIBEN.
+            {t('titleAccent')}
           </span>
         </h2>
         <p className={styles.ctaSubheading}>
-          Ein kurzer Call. Kein Verkaufsgespräch. Wir klären, was für dich Sinn
-          macht — und ob wir zusammenpassen.
+          {t('subtitle')}
         </p>
         <div className={styles.ctaButtons}>
           <CalButton
-            text="Jetzt kostenlosen Call buchen"
+            text={t('primaryButton')}
             calLink="jesstrainer/erstgespraech"
             calConfig='{"layout":"month_view"}'
             className={styles.primaryBtn}
           />
           <Link href="#angebote" className={styles.secondaryBtn}>
-            Angebot auswählen
+            {t('secondaryButton')}
           </Link>
         </div>
       </div>

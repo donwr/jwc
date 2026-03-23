@@ -43,21 +43,16 @@
         display: flex;
       }
 
-      .logoText {
-        display: flex;
-        justify-content: center;
-        font-family: var(--font-header);
-        font-size: 1.4rem;
-        font-weight: 700;
-        letter-spacing: 0.25em;
-        color: inherit;
+      .logo {
+        display: block;
+        height: 2.8rem;
+        width: auto;
+        margin: 0 auto;
 
         @include respond-to(lg) {
-          font-size: 1.1rem;
+          height: 2.2rem;
+          margin: 0;
         }
-
-        width: 100%;
-        margin: 0 auto;
       }
     }
 
@@ -83,6 +78,8 @@
 
       @include respond-to(lg) {
         display: flex;
+        align-items: center;
+        gap: 1rem;
       }
 
       a {
@@ -90,6 +87,17 @@
         margin: 0 0.5rem;
         font-size: 0.7rem;
         letter-spacing: 0.08em;
+      }
+    }
+
+    .langMobile {
+      position: absolute;
+      right: 3rem;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include respond-to(lg) {
+        display: none;
       }
     }
   }

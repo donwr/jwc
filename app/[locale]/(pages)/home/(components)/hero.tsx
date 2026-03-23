@@ -1,35 +1,40 @@
-import ScrollArrow from 'app/(pages)/about/scroll-arrow'
+'use client'
+
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import ScrollArrow from 'app/(pages)/about/scroll-arrow'
 import styles from '../home.module.scss'
 
 const HeroSection: React.FC = () => {
+  const t = useTranslations('home.hero')
+
   return (
     <section className={styles.heroSection}>
       <div className={styles.heroLeft}>
         <h1 className={styles.heroTitle}>
-          DU HAST ES SCHON
+          {t('titleLine1')}
           <br />
-          HUNDERTMAL
-          <br />
-          <span className={styles.heroTitleAccent}>VERSUCHT.</span>
+          <span className={styles.heroTitleAccent}>{t('titleAccent')}</span>
         </h1>
         <p className={styles.heroSubtitle}>
-          Personal Training, Coaching und individuelle Trainingspläne in Berlin
-          — für Menschen, die es leid sind, immer wieder von vorne anzufangen.
+          {t('subtitle')}
+        </p>
+        <p className={styles.heroSubtitle}>
+          {t('description')}
         </p>
         <div className={styles.heroCtas}>
           <Link href="#cta" className={styles.primaryBtn}>
-            Jetzt kostenlosen Call buchen &rarr;
+            {t('ctaButton')} &rarr;
           </Link>
           <Link href="#angebote" className={styles.secondaryBtn}>
-            Angebote ansehen
+            {t('offersButton')}
           </Link>
         </div>
       </div>
       <div className={styles.heroRight}>
         <div className={styles.heroImageMain}>
           <div className={styles.placeholderImage}>
-            <span>Trainer Foto</span>
+            <span>{t('imageAlt')}</span>
           </div>
         </div>
       </div>

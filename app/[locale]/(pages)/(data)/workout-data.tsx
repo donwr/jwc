@@ -3,7 +3,7 @@ import {
   ChatsCircle,
   ClipboardText,
 } from '@phosphor-icons/react/dist/ssr'
-import { ReactNode } from 'react'
+import type { JSX } from 'react'
 
 interface CalendarConfig {
   calLink: string
@@ -18,7 +18,7 @@ interface OfferProgram {
   description: string
   type: string
   duration: string
-  icon: ReactNode
+  icon: JSX.Element
   calendar: CalendarConfig
 }
 

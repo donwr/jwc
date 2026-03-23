@@ -1,8 +1,11 @@
 import DuplicatePackageCheckerPlugin from '@cerner/duplicate-package-checker-webpack-plugin'
 import bundleAnalyzer from '@next/bundle-analyzer'
+import createNextIntlPlugin from 'next-intl/plugin'
 import withSerwistInit from '@serwist/next'
 import { castToSass } from './libs/sass-utils/index.js'
 import sassVars from './styles/config.js'
+
+const withNextIntl = createNextIntlPlugin()
 
 const withSerwist = withSerwistInit({
   swSrc: 'app/sw.js',
@@ -157,8 +160,8 @@ const nextConfig = {
   redirects: async () => {
     return [
       {
-        source: '/home',
-        destination: '/',
+        source: '/:locale(de|en)/home',
+        destination: '/:locale',
         permanent: true,
       },
     ]
@@ -166,8 +169,8 @@ const nextConfig = {
   rewrites: async () => {
     return [
       {
-        source: '/',
-        destination: '/home',
+        source: '/:locale(de|en)',
+        destination: '/:locale/home',
       },
     ]
   },
@@ -179,7 +182,7 @@ const NextApp = async (phase) => {
     enabled: process.env.ANALYZE === 'true',
   })
 
-  const plugins = [withBundleAnalyzer, withSerwist]
+  const plugins = [withBundleAnalyzer, withSerwist, withNextIntl]
 
   return plugins.reduce((acc, plugin) => plugin(acc), {
     ...nextConfig,

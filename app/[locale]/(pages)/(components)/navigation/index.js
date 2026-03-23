@@ -2,19 +2,23 @@
 
 import cn from 'clsx'
 import { Link } from 'components/link'
+import { useTranslations } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import { LanguageToggle } from './language-toggle'
 import s from './navigation.module.scss'
-
-export const LINKS = [
-  { href: '/#angebote', label: 'Angebote' },
-  { href: '/#faq', label: 'FAQ' },
-  { href: '/contact', label: 'Kontakt' },
-]
 
 export function Navigation() {
   const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
+  const t = useTranslations('nav')
+
+  const LINKS = [
+    { href: '/#about', label: t('about') },
+    { href: '/#angebote', label: t('offers') },
+    { href: '/#faq', label: t('faq') },
+    { href: '/contact', label: t('contact') },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +40,7 @@ export function Navigation() {
       <div className={s.navWrapper}>
         <div className={s.group}>
           <Link href="/">
-            <span className={s.logoText}>JESS</span>
+            <img src="/logo.svg" alt="JWC" className={s.logo} />
           </Link>
         </div>
 
@@ -58,9 +62,14 @@ export function Navigation() {
         </ul>
 
         <div className={s.contact}>
+          <LanguageToggle />
           <Link className={s.bookBtn} href={'#cta'}>
-            Call buchen
+            {t('bookCall')}
           </Link>
+        </div>
+
+        <div className={s.langMobile}>
+          <LanguageToggle />
         </div>
       </div>
     </nav>

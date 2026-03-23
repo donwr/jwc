@@ -1,0 +1,420 @@
+{
+  "metadata": {
+    "title": "JD — Personal Training Berlin",
+    "titleTemplate": "%s — JD Personal Training",
+    "description": "Personal Training, Coaching und individuelle Trainingspläne in Berlin und online. Kraftaufbau, funktionelles Training, Athletik — mit Struktur, Progression und echtem Coaching."
+  },
+  "nav": {
+    "start": "Start",
+    "about": "Über mich",
+    "offers": "Angebote",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "bookCall": "Call buchen"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "STRONGER. FITTER.",
+      "titleAccent": "CONSISTENCY PRO.",
+      "subtitle": "Durch Coaching, das wirklich zu dir passt.",
+      "description": "Personal Training, Coaching & individuelle Trainingspläne – in Berlin oder online. Ich helfe dir, stärker, fitter und strukturierter zu werden – mit Training und Coaching, das wirklich zu dir passt.",
+      "ctaButton": "Jetzt Call buchen",
+      "offersButton": "Angebote ansehen",
+      "imageAlt": "Jess Personal Trainer"
+    },
+    "marquee": {
+      "items": ["STRUKTUR", "PROGRESSION", "COACHING", "KONSTANZ", "KRAFTAUFBAU", "ATHLETIK"]
+    },
+    "about": {
+      "heading": "ÜBER MICH",
+      "description": "Ich bin Jess, Personal Trainer aus Berlin mit Background im Leistungs-, Athletik- und Basketballbereich. Mein Fokus liegt auf Kraftaufbau, Fitness, funktionellem Training, Stabilität und echter Konstanz. Ich arbeite nicht mit planlosem Training oder kurzfristiger Motivation, sondern mit Struktur, Progression und Coaching, das wirklich zu dir und deinem Alltag passt.",
+      "button": "Mehr erfahren",
+      "imageAlt1": "Training",
+      "imageAlt2": "Coaching"
+    },
+    "forWhom": {
+      "heading": "MEIN COACHING IST IDEAL FÜR DICH, WENN DU…",
+      "items": [
+        "einen Plan brauchst, der wirklich zu dir passt",
+        "dein Training ernsthaft und mit System angehen willst",
+        "Support und Accountability suchst",
+        "nicht nur anfangen, sondern auch wirklich dranbleiben willst"
+      ]
+    },
+    "whatMakesDifferent": {
+      "heading": "WAS MEIN COACHING BESONDERS MACHT",
+      "items": [
+        "individuell auf dich und dein Ziel abgestimmt",
+        "Training in klaren Phasen statt planlosem Abarbeiten",
+        "Technik, Struktur und Progression statt Chaos",
+        "Background aus Athletik, Krafttraining, funktionellem Training und Basketball"
+      ]
+    },
+    "imageSplit": {
+      "imageAlt1": "Training Session",
+      "imageAlt2": "Gym / Equipment",
+      "button1": "Call buchen",
+      "button2": "Angebote ansehen"
+    },
+    "howItWorks": {
+      "label": "SO LÄUFT'S AB",
+      "heading": "DREI SCHRITTE ZUM START",
+      "step1": {
+        "title": "Call oder Anfrage",
+        "description": "Wir sprechen kurz über dein Ziel, dein aktuelles Level und was für dich am meisten Sinn macht."
+      },
+      "step2": {
+        "title": "Plan oder Start",
+        "description": "Du bekommst die passende Struktur für dein Training – ob im 1:1 Coaching, mit Trainingsplan oder mit Begleitung."
+      },
+      "step3": {
+        "title": "Fortschritt und Anpassung",
+        "description": "Wir passen dein Training an, bauen Fortschritt auf und sorgen dafür, dass du wirklich dranbleibst."
+      }
+    },
+    "offers": {
+      "label": "ANGEBOTE",
+      "heading": "FINDE DEINEN WEG",
+      "personalTraining": {
+        "title": "1:1 Personal Training",
+        "subtitle": "Individuell. Direkt. Effektiv.",
+        "description": "Du willst nicht nur einen Plan, sondern direktes Coaching, klare Korrekturen und jemanden, der dich begleitet und auf Kurs hält? Dann ist 1:1 Personal Training die beste Option für dich.",
+        "description2": "Jede Session wird individuell auf dein Ziel, dein Level und deinen aktuellen Stand abgestimmt. Dabei geht es nicht nur um Training, sondern um Technik, Struktur, Progression und echte Fortschritte.",
+        "features": [
+          "individuell geplante Sessions",
+          "direktes Technik-Coaching und Korrekturen",
+          "klare Progression statt planlosem Training",
+          "angepasst an Ziel, Level und Alltag",
+          "Technik, Struktur und Accountability",
+          "ehrliches Feedback und Begleitung"
+        ],
+        "pricing": {
+          "single": { "label": "1h", "price": "89 €" },
+          "pack5": { "label": "5er Karte", "price": "399 €" },
+          "pack10": { "label": "10er Karte", "price": "750 €" },
+          "monthly1x": { "label": "Monatsabo (1x/Woche)", "price": "239 € / Monat" },
+          "monthly2x": { "label": "Monatsabo (2x/Woche)", "price": "450 € / Monat" }
+        },
+        "button": "Personal Training anfragen",
+        "ctaButton": "Jetzt Call buchen"
+      },
+      "trainingPlan": {
+        "title": "Individueller Trainingsplan",
+        "subtitle": "Dein Plan. Klar strukturiert. Auf dich zugeschnitten.",
+        "description": "Du willst selbstständig trainieren, aber endlich mit einem Plan, der wirklich zu dir passt? Dann ist dieses Angebot dein perfekter Einstieg.",
+        "description2": "Ich erstelle dir einen individuellen Trainingsplan auf Basis eines Fragebogens und eines Erstgesprächs, damit ich deine Ziele, dein aktuelles Level, deinen Alltag, dein Equipment und mögliche Einschränkungen richtig einschätzen kann.",
+        "steps": [
+          "Du buchst und bezahlst dein Angebot",
+          "Du füllst den Fragebogen aus",
+          "Wir führen ein Erstgespräch / Check-up-Call",
+          "Danach erstelle ich deinen Trainingsplan"
+        ],
+        "features": [
+          "individueller Trainingsplan für 4–6 Wochen",
+          "abgestimmt auf dein Ziel, dein Level und dein Equipment",
+          "klare Übungen, Sätze, Wiederholungen und Pausen",
+          "sinnvolle Progression und Struktur",
+          "keine laufende Betreuung"
+        ],
+        "delivery": "In der Regel innerhalb von 3–5 Tagen (oft auch schneller)",
+        "price": "59 €",
+        "button": "Trainingsplan starten"
+      },
+      "coaching": {
+        "title": "Trainingsplan + Betreuung",
+        "subtitle": "Struktur, Support und Accountability – komplett online",
+        "description": "Du willst nicht nur einen Trainingsplan, sondern auch Feedback, Anpassungen und jemanden, der dich auf Kurs hält? Dann ist dieses Angebot für dich.",
+        "description2": "Die Betreuung findet komplett online statt. Du trainierst selbstständig, kannst mir aber jederzeit schreiben, wenn du Fragen zu deinen Workouts, Übungen, Gewichten oder deinem Fortschritt hast. Ich antworte dir in der Regel innerhalb von maximal 10 Stunden.",
+        "description3": "Ich bin dabei nicht nur dein Coach, sondern auch dein Accountability-Partner: jemand, der mitdenkt, motiviert und dafür sorgt, dass du wirklich dranbleibst.",
+        "features": [
+          "individueller Trainingsplan",
+          "Fragebogen + Erstgespräch",
+          "laufender Online-Support",
+          "Anpassung von Gewichten und Übungen",
+          "Alternativübungen bei Bedarf",
+          "Accountability und ehrliches Feedback",
+          "Check-up-Calls nach Bedarf"
+        ],
+        "packages": {
+          "weeks4": { "title": "4 Wochen", "price": "99 €" },
+          "weeks8": { "title": "8 Wochen", "price": "179 €" },
+          "weeks12": { "title": "12 Wochen", "price": "249 €" }
+        },
+        "button": "Online-Coaching starten"
+      },
+      "vip": {
+        "title": "VIP Coaching",
+        "subtitle": "Exklusiv. Eng. Persönlich.",
+        "description": "Du willst nicht nur Training, sondern einen persönlichen Coach, der exklusiv mit dir arbeitet, auf deine Bedürfnisse eingeht und dich eng begleitet? Dann ist VIP Coaching die intensivste Form der Zusammenarbeit.",
+        "description2": "Hier geht es nicht nur um Workouts, sondern um Training, Ernährungsempfehlungen, Support, Accountability und eine deutlich engere Begleitung, die individuell auf dich und deinen Alltag abgestimmt ist.",
+        "features": [
+          "individuelles Coaching",
+          "engere und persönlichere Begleitung",
+          "Training und Struktur",
+          "Ernährungsempfehlungen",
+          "laufender Support",
+          "Accountability",
+          "direkter Austausch und enge Anpassung"
+        ],
+        "price": "Preis auf Anfrage",
+        "button": "VIP anfragen"
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "heading": "HÄUFIGE FRAGEN",
+      "items": [
+        {
+          "question": "Wie läuft das Erstgespräch ab?",
+          "answer": "Im Erstgespräch schauen wir uns gemeinsam dein Ziel, deinen aktuellen Stand und deine Rahmenbedingungen an. So kann ich besser einschätzen, welches Angebot für dich am meisten Sinn macht und wie der beste Start für dich aussieht."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen dem Trainingsplan und dem Trainingsplan + Betreuung?",
+          "answer": "Beim individuellen Trainingsplan bekommst du einen klaren, auf dich zugeschnittenen Plan, den du selbstständig umsetzt. Beim Trainingsplan + Betreuung bekommst du zusätzlich laufenden Support, Anpassungen, Feedback und Accountability. Das heißt: Du bist mit deinem Training nicht allein und kannst jederzeit Rückfragen stellen."
+        },
+        {
+          "question": "Ist die Betreuung bei den Online-Angeboten komplett digital?",
+          "answer": "Ja. Die Betreuung läuft komplett online über Nachrichten und bei Bedarf über Check-up-Calls. Du trainierst selbstständig, bekommst aber Support, Anpassungen und Rückmeldung, damit du nicht allein mit deinem Plan bist."
+        },
+        {
+          "question": "Wie schnell bekomme ich eine Antwort?",
+          "answer": "In der Regel antworte ich dir innerhalb von maximal 10 Stunden. Du kannst mir jederzeit schreiben, wenn Fragen zu deinem Training, deinen Übungen oder deinem Fortschritt auftauchen."
+        },
+        {
+          "question": "Was ist, wenn ich nicht weiß, wie eine Übung funktioniert?",
+          "answer": "Kein Problem. Wenn du das Angebot Trainingsplan + Betreuung gebucht hast, kannst du mir einfach schreiben. Ich schicke dir dann je nach Situation Beispiel-Videos, Erklärungen oder passende Alternativen. Wichtig ist: Du sollst die Übungen sicher und sauber umsetzen können."
+        },
+        {
+          "question": "Kann ich später vom Trainingsplan ins Personal Training wechseln?",
+          "answer": "Ja, natürlich. Wenn du merkst, dass du mehr direkte Begleitung, Korrekturen oder persönlichen Support willst, können wir jederzeit vom Trainingsplan ins 1:1 Personal Training oder ins VIP Coaching wechseln."
+        },
+        {
+          "question": "Für wen ist VIP Coaching sinnvoll?",
+          "answer": "VIP Coaching ist ideal für dich, wenn du nicht nur einen Plan willst, sondern eine engere, persönlichere und exklusivere Begleitung suchst – mit mehr Support, mehr Struktur und direkterem Austausch."
+        },
+        {
+          "question": "Wie läuft der individuelle Trainingsplan ab?",
+          "answer": "Du buchst zuerst dein Angebot, füllst anschließend einen Fragebogen aus und wir führen ein kurzes Erstgespräch. Danach erstelle ich deinen Trainingsplan – abgestimmt auf dein Ziel, dein Level und deine Möglichkeiten."
+        },
+        {
+          "question": "Wie schnell bekomme ich meinen Trainingsplan?",
+          "answer": "In der Regel erhältst du deinen Trainingsplan innerhalb von 3–5 Tagen, oft auch schneller."
+        },
+        {
+          "question": "Muss ich schon fit sein, um mit dir zu arbeiten?",
+          "answer": "Nein, natürlich nicht. Egal ob Anfänger oder fortgeschritten, ich hole dich dort ab, wo du gerade stehst. Mein Coaching ist so aufgebaut, dass es sich an dein Level, dein Ziel und deine Möglichkeiten anpasst."
+        },
+        {
+          "question": "Kann ich auch mit einem Trainingsplan starten, wenn ich noch nicht im Gym trainiere?",
+          "answer": "Ja. Ein Trainingsplan kann auch so aufgebaut werden, dass du ihn zu Hause oder mit wenig Equipment umsetzen kannst."
+        }
+      ]
+    },
+    "cta": {
+      "titleLine1": "BEREIT, ENDLICH MIT",
+      "titleLine2": "STRUKTUR",
+      "titleAccent": "ZU TRAINIEREN?",
+      "subtitle": "Egal ob Personal Training, individueller Trainingsplan oder Online-Coaching — wir finden den Weg, der zu dir passt.",
+      "primaryButton": "Jetzt Call buchen",
+      "secondaryButton": "Angebot auswählen"
+    }
+  },
+  "about": {
+    "heroTitle": "Über Jess",
+    "section1": {
+      "subheader": "Background",
+      "header": "Leistung, Athletik & Basketball",
+      "description1": "Ich bin Jess, Personal Trainer aus Berlin mit Background im Leistungs-, Athletik- und Basketballbereich. Mein Fokus liegt auf Kraftaufbau, Fitness, funktionellem Training, Stabilität und echter Konstanz.",
+      "description2": "Ich arbeite nicht mit planlosem Training oder kurzfristiger Motivation, sondern mit Struktur, Progression und Coaching, das wirklich zu dir und deinem Alltag passt."
+    },
+    "section2": {
+      "subheader": "Mein Ansatz",
+      "header": "Struktur statt Motivation",
+      "description1": "Ich arbeite mit Leuten, die schon oft angefangen und wieder aufgehört haben. Die nicht faul sind — sondern überfordert von Plänen, die nicht in ihr Leben passen, und allein gelassen mit guten Vorsätzen, die nach zwei Wochen verschwinden.",
+      "description2": "Mein Job ist nicht, dich durch ein Workout zu schreien. Mein Job ist, mit dir eine Trainingsstruktur aufzubauen, die auch hält, wenn der Dienstag stressig wird, der Rücken zwickt oder du drei Tage nicht trainiert hast."
+    },
+    "section3": {
+      "subheader": "Für dich",
+      "header": "Echtes Coaching, das passt",
+      "description1": "Egal ob du stärker werden, Fett verlieren, deine Fitness verbessern oder einfach wieder konstant trainieren willst — wir bauen gemeinsam einen Weg, den du auch wirklich durchziehen kannst.",
+      "description2": "Kein Standardplan. Kein \u201EEinfach durchziehen.\u201C Sondern ein System, das zu deinem Alltag, deinem Körper und deinem Level passt — mit jemandem, der mitdenkt und dranbleibt."
+    }
+  },
+  "contact": {
+    "title": "Kontakt / Call buchen",
+    "description": "Wenn du Fragen hast oder direkt starten willst, kannst du dir einfach einen Call buchen oder mir direkt schreiben.",
+    "email": "Email: jess@trainer.de",
+    "form": {
+      "firstName": "Vorname *",
+      "lastName": "Nachname *",
+      "email": "E-Mail *",
+      "phone": "Telefonnummer",
+      "message": "Nachricht *",
+      "submit": "Absenden",
+      "submitting": "Wird gesendet...",
+      "validation": {
+        "firstNameRequired": "Vorname ist erforderlich",
+        "lastNameRequired": "Nachname ist erforderlich",
+        "emailRequired": "E-Mail ist erforderlich",
+        "emailInvalid": "Ungültige E-Mail-Adresse",
+        "messageRequired": "Nachricht ist erforderlich"
+      },
+      "toast": {
+        "success": "Kontaktformular erfolgreich gesendet!",
+        "error": "Fehler beim Senden des Kontaktformulars. Bitte versuche es erneut.",
+        "genericError": "Ein Fehler ist beim Senden des Kontaktformulars aufgetreten."
+      }
+    }
+  },
+  "workouts": {
+    "heroTitle": "Personal Training, Trainingspläne & Online-Coaching in Berlin",
+    "heroDescription": "Individuelles Training mit Struktur, Progression und echtem Coaching.",
+    "offersHeading": "Meine Angebote",
+    "categories": {
+      "personalTraining": {
+        "program": "1:1 Personal Training",
+        "description": "Individuell. Direkt. Effektiv. 1:1 Sessions mit direktem Technik-Coaching und Korrekturen in Echtzeit.",
+        "type": "1:1 Coaching",
+        "duration": "Flexibel"
+      },
+      "trainingPlan": {
+        "program": "Individueller Trainingsplan",
+        "description": "Dein Plan. Klar strukturiert. Auf dich zugeschnitten. 59 €",
+        "type": "Trainingsplan",
+        "duration": "4–6 Wochen"
+      },
+      "coaching": {
+        "program": "Trainingsplan + Betreuung",
+        "description": "Struktur, Support und Accountability – komplett online. Ab 99 €.",
+        "type": "Online-Betreuung",
+        "duration": "4–12 Wochen"
+      },
+      "vip": {
+        "program": "VIP Coaching",
+        "description": "Exklusiv. Eng. Persönlich. Die intensivste Form der Zusammenarbeit.",
+        "type": "Exklusiv-Coaching",
+        "duration": "Auf Anfrage"
+      }
+    }
+  },
+  "feedback": {
+    "title": "Trainer Feedback",
+    "description": "Dein Feedback hilft mir, meine Trainingsprogramme zu verbessern. Bitte bewerte deine Erfahrung und hinterlasse ein Testimonial.",
+    "form": {
+      "firstName": "Vorname *",
+      "lastName": "Nachname *",
+      "email": "E-Mail *",
+      "message": "Nachricht *",
+      "rating": "Bewertung (1-5) *",
+      "submit": "Absenden",
+      "submitting": "Wird gesendet...",
+      "validation": {
+        "firstNameRequired": "Vorname ist erforderlich",
+        "lastNameRequired": "Nachname ist erforderlich",
+        "emailRequired": "E-Mail ist erforderlich",
+        "emailInvalid": "Ungültige E-Mail-Adresse",
+        "messageRequired": "Nachricht ist erforderlich",
+        "ratingRequired": "Bewertung ist erforderlich"
+      },
+      "toast": {
+        "success": "Feedback erfolgreich gesendet!",
+        "error": "Fehler beim Senden des Feedbacks. Bitte versuche es erneut.",
+        "genericError": "Ein Fehler ist beim Senden deines Feedbacks aufgetreten."
+      }
+    }
+  },
+  "footer": {
+    "contact": "KONTAKT",
+    "emailLink": "E-Mail",
+    "bookCall": "Call buchen",
+    "offers": "ANGEBOTE",
+    "personalTraining": "Personal Training",
+    "trainingPlan": "Trainingsplan",
+    "coaching": "Trainingsplan + Betreuung",
+    "vip": "VIP Coaching",
+    "tagline": "STRUKTUR STATT MOTIVATION",
+    "privacy": "DATENSCHUTZ",
+    "terms": "IMPRESSUM",
+    "heroHeading": "PERSONAL TRAINING IN BERLIN",
+    "heroDescription": "Individuelles Training mit Struktur, Progression und echtem Coaching — in Berlin oder online."
+  },
+  "legal": {
+    "terms": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "lastUpdated": "Letzte Aktualisierung: 8. September 2023",
+      "acceptance": {
+        "title": "Annahme der Bedingungen",
+        "content": "Durch den Zugriff auf oder die Nutzung der Website von Jess Personal Training erklären Sie sich mit diesen Allgemeinen Geschäftsbedingungen einverstanden."
+      },
+      "changes": {
+        "title": "Änderungen der Bedingungen",
+        "content": "Wir behalten uns das Recht vor, diese Allgemeinen Geschäftsbedingungen jederzeit zu ändern oder zu überarbeiten."
+      },
+      "use": {
+        "title": "Nutzung des Dienstes",
+        "content": "Sie erklären sich damit einverstanden, den Dienst nur für rechtmäßige Zwecke und in Übereinstimmung mit diesen Geschäftsbedingungen zu nutzen."
+      },
+      "liability": {
+        "title": "Haftungsbeschränkung",
+        "content": "Jess Personal Training haftet in keinem Fall für indirekte, zufällige, besondere, Folge- oder Strafschäden."
+      },
+      "law": {
+        "title": "Anwendbares Recht",
+        "content": "Diese Geschäftsbedingungen unterliegen dem Recht der Bundesrepublik Deutschland."
+      },
+      "termination": {
+        "title": "Kündigung",
+        "content": "Wir behalten uns das Recht vor, Ihr Konto und den Zugang zum Dienst nach unserem alleinigen Ermessen und ohne Vorankündigung zu kündigen oder zu sperren, wenn wir der Meinung sind, dass Ihr Verhalten gegen diese Geschäftsbedingungen verstößt."
+      },
+      "contactInfo": {
+        "title": "Kontaktinformationen",
+        "content": "Bei Fragen zu diesen Geschäftsbedingungen kontaktieren Sie uns bitte:",
+        "email": "Per E-Mail: jess@trainer.de",
+        "phone": "Per Telefon: (917) 426 0289"
+      }
+    },
+    "policy": {
+      "title": "Datenschutzerklärung",
+      "lastUpdated": "Letzte Aktualisierung: 8. September 2023",
+      "intro": "Diese Datenschutzerklärung beschreibt, wie Jess Personal Training Ihre personenbezogenen Daten erfasst, verwendet und weitergibt, wenn Sie jesstrainer.de besuchen oder nutzen.",
+      "collect": {
+        "title": "Erhobene Daten",
+        "intro": "Wir erheben verschiedene Arten von Informationen zu verschiedenen Zwecken, um unseren Service für Sie bereitzustellen und zu verbessern.",
+        "personalData": "Personenbezogene Daten: Wir können Sie bitten, uns bestimmte personenbezogene Daten zur Verfügung zu stellen, die zur Kontaktaufnahme oder Identifizierung verwendet werden können.",
+        "usageData": "Nutzungsdaten: Wir können auch Informationen darüber erheben, wie auf den Dienst zugegriffen und dieser genutzt wird."
+      },
+      "use": {
+        "title": "Verwendung Ihrer Daten",
+        "intro": "Wir verwenden die erhobenen Daten für verschiedene Zwecke:",
+        "items": [
+          "Zur Bereitstellung und Aufrechterhaltung unseres Dienstes.",
+          "Um Sie über Änderungen an unserem Dienst zu informieren.",
+          "Um Ihnen die Teilnahme an interaktiven Funktionen unseres Dienstes zu ermöglichen."
+        ]
+      },
+      "disclosure": {
+        "title": "Weitergabe von Daten",
+        "intro": "Wir können Ihre personenbezogenen Daten unter folgenden Umständen weitergeben:",
+        "legal": "Gesetzliche Anforderungen: Zur Erfüllung einer gesetzlichen Verpflichtung.",
+        "transaction": "Transaktion: Im Falle eines Verkaufs, einer Fusion oder einer Übernahme."
+      },
+      "security": {
+        "title": "Sicherheit",
+        "content": "Die Sicherheit Ihrer Daten ist uns wichtig, aber denken Sie daran, dass keine Methode der Übertragung über das Internet zu 100 % sicher ist."
+      },
+      "changes": {
+        "title": "Änderungen dieser Datenschutzerklärung",
+        "content": "Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen."
+      },
+      "contactUs": {
+        "title": "Kontakt",
+        "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte:",
+        "email": "Per E-Mail: jess@trainer.de"
+      }
+    }
+  },
+  "menu": {
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Allgemeine Geschäftsbedingungen"
+  }
+}

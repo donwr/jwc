@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import CustomCursorContext from '../../../../context/custom-cursor-context'
+import CustomCursorContext from 'context/custom-cursor-context'
 
 // Define the props interface
 interface HoverableTextProps {

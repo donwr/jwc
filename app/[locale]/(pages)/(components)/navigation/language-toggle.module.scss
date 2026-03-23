@@ -1,0 +1,33 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.15em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: inherit;
+  padding: 0;
+  line-height: 1;
+  font-family: inherit;
+
+  .lang {
+    opacity: 0.35;
+    transition: opacity 0.2s ease;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .separator {
+    opacity: 0.2;
+    margin: 0 0.1em;
+  }
+
+  &:hover .lang:not(.active) {
+    opacity: 0.7;
+  }
+}

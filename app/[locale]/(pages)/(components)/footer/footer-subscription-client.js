@@ -2,7 +2,7 @@
 import { useToast } from 'context/toast-context'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import * as Yup from 'yup'
-import { HubspotNewsletterAction } from '../../../../libs/hubspot-forms/action'
+import { HubspotNewsletterAction } from 'libs/hubspot-forms/action'
 import s from './footerSubscription.module.scss'
 
 const validationSchema = Yup.object({

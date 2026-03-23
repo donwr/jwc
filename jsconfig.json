@@ -31,6 +31,6 @@
     "**/*.js",
     "**/*.mjs",
     "context/custom-cursor-context.tsx",
-    "app/(pages)/product/[handle]/page.tsx"
+    "app/[locale]/(pages)/product/[handle]/page.tsx"
   ]
 }

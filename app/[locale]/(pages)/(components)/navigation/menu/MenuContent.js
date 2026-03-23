@@ -1,15 +1,25 @@
 'use client'
 import cn from 'clsx'
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useContext } from 'react'
-import { LINKS } from '..'
 import s from './menu-content.module.scss'
 import { MenuContext } from './MenuManager'
 
 export default function MenuContent() {
   const pathname = usePathname()
   const { open } = useContext(MenuContext)
+  const t = useTranslations('nav')
+  const tMenu = useTranslations('menu')
+
+  const LINKS = [
+    { href: '/#about', label: t('about') },
+    { href: '/#angebote', label: t('offers') },
+    { href: '/#faq', label: t('faq') },
+    { href: '/contact', label: t('contact') },
+  ]
+
   return (
     <div className={s.menuHolder}>
       <div className={cn(s.menuInside, { [s.menuInsideOpen]: open })}>
@@ -75,11 +85,11 @@ export default function MenuContent() {
         </div>
         <div className={s.policyLinks}>
           <a href="/policy" className={s.policyLink}>
-            Privacy Policy
+            {tMenu('privacyPolicy')}
           </a>
           <span className={s.separator}>|</span>
           <a href="/terms" className={s.policyLink}>
-            Terms of Service
+            {tMenu('termsOfService')}
           </a>
         </div>
       </div>

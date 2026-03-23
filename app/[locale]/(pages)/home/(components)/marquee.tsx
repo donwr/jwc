@@ -1,17 +1,11 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import styles from '../home.module.scss'
 
 const MarqueeSection: React.FC = () => {
-  const items = [
-    'STRUKTUR',
-    'DRANBLEIBEN',
-    'COACHING',
-    'RESULTATE',
-    'KRAFTAUFBAU',
-    'PROGRESSION',
-  ]
-
+  const t = useTranslations('home.marquee')
+  const items = Object.values(t.raw('items')) as string[]
   const repeated = [...items, ...items, ...items, ...items]
 
   return (

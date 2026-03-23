@@ -8,6 +8,7 @@
       "components/*": ["components/*"],
       "context/*": ["context/*"],
       "app/*": ["app/*"],
+      "app/(pages)/*": ["app/[locale]/(pages)/*"],
       "@/*": ["./*"]
     },
     "skipLibCheck": true,
@@ -31,9 +32,9 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/(pages)/(components)/customCursor/index.tsx",
-    "app/(pages)/product/[handle]/page.js",
-    "app/(pages)/home/page.js"
+    "app/[locale]/(pages)/(components)/customCursor/index.tsx",
+    "app/[locale]/(pages)/product/[handle]/page.js",
+    "app/[locale]/(pages)/home/page.js"
   ],
   "exclude": ["node_modules"]
 }
