@@ -67,14 +67,9 @@ const OffersSection: React.FC = () => {
                         <span>{t('personalTraining.pricing.monthly2x.price')}</span>
                       </div>
                     </div>
-                    <div className={styles.offerItemCtas}>
-                      <Link href="#cta" className={styles.offerBtn}>
-                        {t('personalTraining.button')} &rarr;
-                      </Link>
-                      <Link href="#cta" className={styles.offerBtnSecondary}>
-                        {t('personalTraining.ctaButton')}
-                      </Link>
-                    </div>
+                    <Link href="#cta" className={styles.offerBtn}>
+                      {t('personalTraining.button')} &rarr;
+                    </Link>
                   </div>
                 </div>
               </div>
