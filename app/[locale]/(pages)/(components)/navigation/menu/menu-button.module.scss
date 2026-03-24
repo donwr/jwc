@@ -6,8 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 10px;
-  top: 15px;
+  right: 1.5rem;
+  top: 2rem;
+  transform: translateY(-50%);
   z-index: 1500;
   will-change: transform;
   transition:
