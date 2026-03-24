@@ -1,10 +1,12 @@
 {
   "metadata": {
-    "title": "Jess — Personal Training Berlin",
-    "titleTemplate": "%s — Jess Personal Training",
-    "description": "Personal training, coaching and custom training plans in Berlin. Strength building, weight loss, functional training, calisthenics, mobility — with structure, progression and real coaching."
+    "title": "JD — Personal Training Berlin",
+    "titleTemplate": "%s — JD Personal Training",
+    "description": "Personal training, coaching and custom training plans in Berlin and online. Strength building, functional training, athletics — with structure, progression and real coaching."
   },
   "nav": {
+    "start": "Home",
+    "about": "About",
     "offers": "Services",
     "faq": "FAQ",
     "contact": "Contact",
@@ -12,24 +14,41 @@
   },
   "home": {
     "hero": {
-      "titleLine1": "YOU'VE TRIED THIS",
-      "titleLine2": "A HUNDRED",
-      "titleAccent": "TIMES.",
-      "subtitle": "Personal training, coaching and custom training plans in Berlin — for people who are tired of starting over again and again.",
-      "ctaButton": "Book your free call now",
+      "titleLine1": "STRONGER. FITTER.",
+      "titleAccent": "CONSISTENCY PRO.",
+      "subtitle": "Through coaching that truly fits you.",
+      "description": "Personal training, coaching & custom training plans — in Berlin or online. I help you get stronger, fitter and more structured — with training and coaching that truly fits you.",
+      "ctaButton": "Book a call now",
       "offersButton": "View services",
-      "imageAlt": "Trainer photo"
+      "imageAlt": "Jess Personal Trainer"
     },
     "marquee": {
-      "items": ["STRUCTURE", "CONSISTENCY", "COACHING", "RESULTS", "STRENGTH", "PROGRESSION"]
+      "items": ["STRUCTURE", "PROGRESSION", "COACHING", "CONSISTENCY", "STRENGTH", "ATHLETICS"]
     },
-    "personalTrainer": {
-      "titleLine1": "INDIVIDUAL COACHING,",
-      "titleAccent": "TAILORED TO YOU",
-      "description": "I'm Jess, a personal trainer in Berlin with a background in performance and athletic training. I work with people who've started and stopped more times than they can count — and finally need a system that sticks.",
+    "about": {
+      "heading": "ABOUT ME",
+      "description": "I'm Jess, a personal trainer from Berlin with a background in performance sport, athletics and basketball. My focus is on strength building, fitness, functional training, stability and real consistency. I don't work with aimless training or short-term motivation — I work with structure, progression and coaching that truly fits you and your daily life.",
       "button": "Learn more",
       "imageAlt1": "Training",
       "imageAlt2": "Coaching"
+    },
+    "forWhom": {
+      "heading": "MY COACHING IS IDEAL FOR YOU IF YOU…",
+      "items": [
+        "need a plan that truly fits you",
+        "want to approach your training seriously and with a system",
+        "are looking for support and accountability",
+        "want to not just start, but actually stick with it"
+      ]
+    },
+    "whatMakesDifferent": {
+      "heading": "WHAT MAKES MY COACHING DIFFERENT",
+      "items": [
+        "individually tailored to you and your goal",
+        "training in clear phases instead of random workouts",
+        "technique, structure and progression instead of chaos",
+        "background in athletics, strength training, functional training and basketball"
+      ]
     },
     "imageSplit": {
       "imageAlt1": "Training Session",
@@ -37,82 +56,108 @@
       "button1": "Book a call",
       "button2": "View services"
     },
-    "problem": {
-      "titleLine1": "YOU DON'T NEED",
-      "titleAccent": "MOTIVATION.",
-      "titleLine3": "YOU NEED A SYSTEM.",
-      "paragraph1": "Most people think they fail because of discipline. They don't. They fail because of no plan, no structure, and no one there to notice when they stop.",
-      "paragraph2": "Motivation gets you through day one. Structure gets you through day one hundred. That's where I come in.",
-      "imageAlt": "Motivation photo",
-      "focusAreas": {
-        "strength": "Strength",
-        "weightLoss": "Weight Loss",
-        "functional": "Functional Training",
-        "calisthenics": "Calisthenics",
-        "mobility": "Mobility",
-        "stability": "Stability"
-      }
-    },
     "howItWorks": {
-      "label": "HOW WE START",
+      "label": "HOW IT WORKS",
       "heading": "THREE STEPS TO GET STARTED",
       "step1": {
-        "title": "Initial consultation",
-        "description": "We talk about your goal, your level, your daily life and what hasn't worked before. No sales pitch — just clarity."
+        "title": "Call or inquiry",
+        "description": "We briefly talk about your goal, your current level and what makes the most sense for you."
       },
       "step2": {
-        "title": "Your plan",
-        "description": "You get a training structure tailored to you. Exercises, sets, progression — all clearly laid out."
+        "title": "Plan or start",
+        "description": "You get the right structure for your training — whether in 1:1 coaching, with a training plan or with ongoing support."
       },
       "step3": {
-        "title": "Stay on track",
-        "description": "You train. I'm there. If something doesn't fit, we adjust. If you disappear, I reach out. That's the difference."
+        "title": "Progress and adjustment",
+        "description": "We adjust your training, build progress and make sure you actually stick with it."
       }
     },
     "offers": {
       "label": "SERVICES",
       "heading": "FIND YOUR PATH",
       "personalTraining": {
-        "title": "Personal Training",
-        "subtitle": "For you, if you can't make progress on your own anymore.",
+        "title": "1:1 Personal Training",
+        "subtitle": "Individual. Direct. Effective.",
+        "description": "You don't just want a plan — you want direct coaching, clear corrections and someone who guides you and keeps you on track? Then 1:1 personal training is the best option for you.",
+        "description2": "Every session is individually tailored to your goal, your level and where you currently stand. It's not just about training — it's about technique, structure, progression and real progress.",
         "features": [
-          "Sessions tailored to your goal and level",
-          "Direct technique coaching in real time",
-          "Adapted to how you feel on the day",
-          "A real person who notices when you slip"
+          "individually planned sessions",
+          "direct technique coaching and corrections",
+          "clear progression instead of random training",
+          "adapted to your goal, level and daily life",
+          "technique, structure and accountability",
+          "honest feedback and guidance"
         ],
-        "button": "Request personal training"
+        "pricing": {
+          "single": { "label": "1h", "price": "€89" },
+          "pack5": { "label": "5-pack", "price": "€399" },
+          "pack10": { "label": "10-pack", "price": "€750" },
+          "monthly1x": { "label": "Monthly (1x/week)", "price": "€239 / month" },
+          "monthly2x": { "label": "Monthly (2x/week)", "price": "€450 / month" }
+        },
+        "button": "Request personal training",
+        "ctaButton": "Book a call now"
       },
       "trainingPlan": {
         "title": "Custom Training Plan",
-        "subtitle": "For you, if you can train — but don't know what to do.",
-        "features": [
-          "Training plan for 4–6 weeks",
-          "Tailored to your goal, level & equipment",
-          "Clear exercises, sets, reps",
-          "Questionnaire + initial consultation included"
+        "subtitle": "Your plan. Clearly structured. Tailored to you.",
+        "description": "You want to train independently, but finally with a plan that truly fits you? Then this is your perfect entry point.",
+        "description2": "I create an individual training plan based on a questionnaire and an initial consultation, so I can properly assess your goals, current level, daily routine, equipment and any limitations.",
+        "steps": [
+          "You book and pay for your package",
+          "You fill out the questionnaire",
+          "We have an initial consultation / check-up call",
+          "Then I create your training plan"
         ],
+        "features": [
+          "individual training plan for 4–6 weeks",
+          "tailored to your goal, level and equipment",
+          "clear exercises, sets, reps and rest periods",
+          "smart progression and structure",
+          "no ongoing support included"
+        ],
+        "delivery": "Usually within 3–5 days (often faster)",
         "price": "€59",
         "button": "Start your training plan"
       },
-      "onlineCoaching": {
-        "title": "Online Coaching",
-        "subtitle": "A plan + someone who stays on it.",
+      "coaching": {
+        "title": "Training Plan + Support",
+        "subtitle": "Structure, support and accountability — fully online",
+        "description": "You don't just want a training plan, but also feedback, adjustments and someone who keeps you on track? Then this is the right offer for you.",
+        "description2": "The support is fully online. You train independently, but can message me anytime with questions about your workouts, exercises, weights or progress. I typically respond within 10 hours.",
+        "description3": "I'm not just your coach — I'm also your accountability partner: someone who thinks along, motivates and makes sure you actually stick with it.",
+        "features": [
+          "individual training plan",
+          "questionnaire + initial consultation",
+          "ongoing online support",
+          "adjustment of weights and exercises",
+          "alternative exercises when needed",
+          "accountability and honest feedback",
+          "check-up calls as needed"
+        ],
         "packages": {
-          "weeks4": {
-            "title": "4 weeks — €99",
-            "description": "Training plan + initial consultation + WhatsApp support + 1 check-up"
-          },
-          "weeks8": {
-            "title": "8 weeks — €179",
-            "description": "Longer support, multiple adjustments possible"
-          },
-          "weeks12": {
-            "title": "12 weeks — €249",
-            "description": "Long-term structure + check-up calls as needed"
-          }
+          "weeks4": { "title": "4 weeks", "price": "€99" },
+          "weeks8": { "title": "8 weeks", "price": "€179" },
+          "weeks12": { "title": "12 weeks", "price": "€249" }
         },
         "button": "Start online coaching"
+      },
+      "vip": {
+        "title": "VIP Coaching",
+        "subtitle": "Exclusive. Close. Personal.",
+        "description": "You don't just want training — you want a personal coach who works exclusively with you, addresses your needs and closely supports you? Then VIP Coaching is the most intensive form of collaboration.",
+        "description2": "This isn't just about workouts — it's about training, nutrition guidance, support, accountability and a much closer level of guidance, individually tailored to you and your daily life.",
+        "features": [
+          "individual coaching",
+          "closer and more personal guidance",
+          "training and structure",
+          "nutrition guidance",
+          "ongoing support",
+          "accountability",
+          "direct communication and close adjustments"
+        ],
+        "price": "Price on request",
+        "button": "Request VIP coaching"
       }
     },
     "faq": {
@@ -120,37 +165,57 @@
       "heading": "COMMON QUESTIONS",
       "items": [
         {
-          "question": "I've started and stopped so many times. Why should this time be different?",
-          "answer": "Because this time you're not alone. My coaching is designed to catch the moment when most people quit: week three, when life hits back. That's what the plan, the adjustments, and having me in your corner are for."
+          "question": "How does the initial consultation work?",
+          "answer": "In the initial consultation, we look at your goal, your current level and your circumstances together. This helps me better assess which offer makes the most sense for you and what the best start looks like."
         },
         {
-          "question": "I'm totally out of shape. Is that embarrassing?",
-          "answer": "No. Most of my clients start exactly like that. I adjust everything to your current level — you don't need to be good at anything to get started."
+          "question": "What's the difference between the training plan and the training plan + support?",
+          "answer": "With the individual training plan, you get a clear, tailored plan that you follow independently. With the training plan + support, you also get ongoing support, adjustments, feedback and accountability. In other words: you're not alone with your training and can ask questions anytime."
         },
         {
-          "question": "How does the custom training plan work?",
-          "answer": "You book, fill out a short questionnaire, and we have an initial consultation. Then I create your plan — tailored to your goal, your level, your equipment and your daily routine."
+          "question": "Is the support for online offers completely digital?",
+          "answer": "Yes. The support runs fully online via messages and, when needed, check-up calls. You train independently but get support, adjustments and feedback so you're not alone with your plan."
         },
         {
-          "question": "What if I can't train at some point?",
-          "answer": "It happens. And it's no reason to throw everything away. We adjust the plan if needed. That's exactly the difference compared to a standard plan from the internet."
+          "question": "How quickly will I get a response?",
+          "answer": "I typically respond within 10 hours. You can message me anytime when questions about your training, exercises or progress come up."
         },
         {
-          "question": "Is the online coaching really personal?",
-          "answer": "Everything comes directly from me. No bot, no chatbot, no automated messages. When you write to me, I reply — usually within 10 hours."
+          "question": "What if I don't know how to do an exercise?",
+          "answer": "No problem. If you've booked the training plan + support, just message me. Depending on the situation, I'll send you example videos, explanations or suitable alternatives. The important thing is: you should be able to perform the exercises safely and correctly."
         },
         {
-          "question": "Can I switch from the training plan to personal training?",
-          "answer": "Yes, anytime. If you notice you want more direct support, we simply switch."
+          "question": "Can I switch from the training plan to personal training later?",
+          "answer": "Yes, of course. If you feel you want more direct guidance, corrections or personal support, we can switch from the training plan to 1:1 personal training or VIP coaching at any time."
+        },
+        {
+          "question": "Who is VIP Coaching for?",
+          "answer": "VIP Coaching is ideal if you don't just want a plan, but are looking for closer, more personal and more exclusive guidance — with more support, more structure and more direct communication."
+        },
+        {
+          "question": "How does the individual training plan work?",
+          "answer": "You first book your package, then fill out a questionnaire and we have a short initial consultation. After that, I create your training plan — tailored to your goal, your level and your possibilities."
+        },
+        {
+          "question": "How quickly will I get my training plan?",
+          "answer": "You'll usually receive your training plan within 3–5 days, often even faster."
+        },
+        {
+          "question": "Do I need to be fit already to work with you?",
+          "answer": "No, of course not. Whether beginner or advanced, I meet you where you are. My coaching is designed to adapt to your level, your goal and your possibilities."
+        },
+        {
+          "question": "Can I start with a training plan even if I don't train at a gym yet?",
+          "answer": "Yes. A training plan can also be designed so you can follow it at home or with minimal equipment."
         }
       ]
     },
     "cta": {
-      "titleLine1": "YOU'VE RESTARTED",
-      "titleLine2": "ENOUGH.",
-      "titleAccent": "START STICKING WITH IT.",
-      "subtitle": "A quick call. No sales pitch. We figure out what makes sense for you — and whether we're a good fit.",
-      "primaryButton": "Book your free call now",
+      "titleLine1": "READY TO FINALLY",
+      "titleLine2": "TRAIN WITH",
+      "titleAccent": "STRUCTURE?",
+      "subtitle": "Whether personal training, custom training plan or online coaching — we'll find the path that fits you.",
+      "primaryButton": "Book a call now",
       "secondaryButton": "Choose a service"
     }
   },
@@ -158,9 +223,9 @@
     "heroTitle": "About Jess",
     "section1": {
       "subheader": "Background",
-      "header": "Performance & Athletic Training",
-      "description1": "I'm Jess, a personal trainer in Berlin with a background in performance and athletic training. My focus is on strength building, general fitness, weight loss, functional training, calisthenics, stability and mobility.",
-      "description2": "I don't work with aimless training or motivational slogans — I work with structure, progression and a system that fits you."
+      "header": "Performance, Athletics & Basketball",
+      "description1": "I'm Jess, a personal trainer from Berlin with a background in performance sport, athletics and basketball. My focus is on strength building, fitness, functional training, stability and real consistency.",
+      "description2": "I don't work with aimless training or short-term motivation — I work with structure, progression and coaching that truly fits you and your daily life."
     },
     "section2": {
       "subheader": "My approach",
@@ -176,8 +241,8 @@
     }
   },
   "contact": {
-    "title": "Get in touch",
-    "description": "Send me a message or reach me through my channels. I'm here to support you on your fitness journey and answer all your questions.",
+    "title": "Contact / Book a call",
+    "description": "If you have questions or want to get started right away, just book a call or message me directly.",
     "email": "Email: jess@trainer.de",
     "form": {
       "firstName": "First Name *",
@@ -207,22 +272,28 @@
     "offersHeading": "My Services",
     "categories": {
       "personalTraining": {
-        "program": "Personal Training",
-        "description": "For you, if you can't make progress on your own anymore. 1:1 sessions with direct technique coaching and real-time corrections.",
+        "program": "1:1 Personal Training",
+        "description": "Individual. Direct. Effective. 1:1 sessions with direct technique coaching and real-time corrections.",
         "type": "1:1 Coaching",
         "duration": "Flexible"
       },
       "trainingPlan": {
         "program": "Custom Training Plan",
-        "description": "For you, if you know you can train — but not what. Your plan, clearly structured, tailored to you. €59",
+        "description": "Your plan. Clearly structured. Tailored to you. €59",
         "type": "Training Plan",
         "duration": "4–6 weeks"
       },
-      "onlineCoaching": {
-        "program": "Online Coaching",
-        "description": "For you, if you need a plan AND someone who stays on it. Training plan + ongoing support from €99.",
+      "coaching": {
+        "program": "Training Plan + Support",
+        "description": "Structure, support and accountability — fully online. From €99.",
         "type": "Online Support",
         "duration": "4–12 weeks"
+      },
+      "vip": {
+        "program": "VIP Coaching",
+        "description": "Exclusive. Close. Personal. The most intensive form of collaboration.",
+        "type": "Exclusive Coaching",
+        "duration": "On request"
       }
     }
   },
@@ -259,12 +330,13 @@
     "offers": "SERVICES",
     "personalTraining": "Personal Training",
     "trainingPlan": "Training Plan",
-    "onlineCoaching": "Online Coaching",
+    "coaching": "Training Plan + Support",
+    "vip": "VIP Coaching",
     "tagline": "STRUCTURE OVER MOTIVATION",
     "privacy": "PRIVACY POLICY",
     "terms": "TERMS OF SERVICE",
     "heroHeading": "PERSONAL TRAINING IN BERLIN",
-    "heroDescription": "Individual training with structure, progression and real coaching — for people who are ready to finally stick with it."
+    "heroDescription": "Individual training with structure, progression and real coaching — in Berlin or online."
   },
   "legal": {
     "terms": {
@@ -288,7 +360,7 @@
       },
       "law": {
         "title": "Governing Law",
-        "content": "These Terms of Service are governed by the laws of the United States."
+        "content": "These Terms of Service are governed by the laws of the Federal Republic of Germany."
       },
       "termination": {
         "title": "Termination",
