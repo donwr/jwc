@@ -2,10 +2,15 @@
 import { getCalApi } from '@calcom/embed-react'
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { gsap } from 'gsap'
+import { useLocale } from 'next-intl'
 import { useEffect, useRef, useState } from 'react'
 import { nextEvent as importedEventsData } from '../../(data)/next-event'
 import s from './event-display.module.scss' // Import the SCSS file as a module
 export const EventDisplay = () => {
+  const locale = useLocale()
+  const calLink = locale === 'de'
+    ? 'jwc-training-pf0zsk/vorstellungsgespraech'
+    : 'jwc-training-pf0zsk/initial-consultation'
   const [showNextEvent, setShowNextEvent] = useState(true)
   const eventRef = useRef(null)
 
@@ -59,7 +64,7 @@ export const EventDisplay = () => {
             ) : (
               <button
                 aria-label="workout session"
-                data-cal-link="jwc-training-pf0zsk/initial-consultation"
+                data-cal-link={calLink}
                 data-cal-config='{"layout":"month_view"}'
                 className={s.otherText}
               >
