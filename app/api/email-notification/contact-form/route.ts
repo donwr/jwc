@@ -20,7 +20,7 @@ export async function POST(request: Request) {
       // Notify Jess
       resend.emails.send({
         from: 'Jess Training <no-reply@notifications.jwctraining.de>',
-        to: ['jess@trainer.de'],
+        to: ['jwctrainingberlin@gmail.com'],
         subject: `New message from ${firstName} ${lastName}`,
         react: EmailTemplate({ firstName, lastName, email, phoneNumber, message, type: 'Contact Form' }),
       }),
