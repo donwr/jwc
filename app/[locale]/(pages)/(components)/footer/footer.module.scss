@@ -35,6 +35,8 @@
         grid-column: span 4;
         grid-gap: 0;
         width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
 
         @include respond-to(lg) {
           order: 1;

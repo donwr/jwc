@@ -12,8 +12,11 @@ export default function ContactSection() {
             Send me a message and I&apos;ll get back to you as soon as possible.
           </p>
           <div className={styles.contactMeta}>
-            <a href="mailto:jess@trainer.de" className={styles.contactMetaItem}>
-              jess@trainer.de
+            <a href="mailto:jwctrainingberlin@gmail.com" className={styles.contactMetaItem}>
+              jwctrainingberlin@gmail.com
+            </a>
+            <a href="tel:+4915679614147" className={styles.contactMetaItem}>
+              +49 156 79614147
             </a>
           </div>
         </div>

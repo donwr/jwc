@@ -770,6 +770,7 @@ $radius-lg: 12px;
 .offerBtn {
   align-self: flex-start;
   display: inline-flex;
+  white-space: nowrap;
   padding: 0.65rem 1.5rem;
   border: 1.5px solid $text;
   border-radius: 100px;

@@ -1,62 +1,58 @@
 import React from 'react'
 import { Wrapper } from '../(components)/wrapper'
 import s from './terms.module.scss'
-const TermsOfService = () => {
+
+const Impressum = () => {
   return (
     <Wrapper theme="dark">
       <div className={s.terms}>
-        <h2>Terms of Service</h2>
+        <h2>Impressum</h2>
 
-        <h3>Last Updated: September 8th, 2023</h3>
-
-        <h4>Acceptance of Terms</h4>
+        <h3>Angaben gemäß § 5 TMG</h3>
         <p>
-          By accessing or using Jess Personal Training's Website, you agree to
-          comply with and be bound by these Terms of Service.
+          Jessica Wächter<br />
+          JWC Training<br />
+          Berlin, Deutschland
         </p>
 
-        <h4>Changes to Terms</h4>
+        <h4>Kontakt</h4>
         <p>
-          We reserve the right to change, modify, or revise these Terms of
-          Service at any time.
+          Telefon: +49 156 79614147<br />
+          E-Mail: <a href="mailto:jwctrainingberlin@gmail.com">jwctrainingberlin@gmail.com</a>
         </p>
 
-        <h4>Use of the Service</h4>
+        <h4>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h4>
         <p>
-          You agree to use the Service for lawful purposes and in accordance
-          with these Terms of Service.
+          Jessica Wächter<br />
+          Berlin, Deutschland
         </p>
 
-        <h4>Limitation of Liability</h4>
+        <h4>Haftungsausschluss</h4>
         <p>
-          In no event shall Jess Personal Training be liable for any indirect,
-          incidental, special, consequential or punitive damages.
+          Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt.
+          Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann
+          jedoch keine Gewähr übernommen werden.
         </p>
 
-        <h4>Governing Law</h4>
+        <h4>Haftung für Links</h4>
         <p>
-          These Terms of Service are governed by the laws of the United States.
+          Diese Website enthält Links zu externen Webseiten Dritter, auf deren
+          Inhalte kein Einfluss besteht. Für die Inhalte der verlinkten Seiten
+          ist stets der jeweilige Anbieter oder Betreiber der Seiten
+          verantwortlich.
         </p>
 
-        <h4>Termination</h4>
+        <h4>Urheberrecht</h4>
         <p>
-          We reserve the right to terminate or suspend your account and access
-          to the Service at our sole discretion, without notice, for conduct
-          that we believe violates these Terms of Service or is harmful to other
-          users of the Service, us, or third parties, or for any other reason.
+          Die durch den Seitenbetreiber erstellten Inhalte und Werke auf dieser
+          Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
+          Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+          Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des
+          jeweiligen Autors bzw. Erstellers.
         </p>
-
-        <h4>Contact Information</h4>
-        <p>
-          For any questions about these Terms of Service, please contact us:
-        </p>
-        <ul>
-          <li>By email: jess@trainer.de</li>
-          <li>By phone: (917) 426 0289</li>
-        </ul>
       </div>
     </Wrapper>
   )
 }
 
-export default TermsOfService
+export default Impressum
