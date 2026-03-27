@@ -1,100 +1,109 @@
 import { ImageResponse } from 'next/og'
-import { themes } from 'styles/config.js'
-import AppData from '../package.json'
 
 export const runtime = 'edge'
 
-// Image metadata
-export const alt = AppData.name
+export const alt = 'JWC Personal Training Berlin'
 export const size = {
   width: 1200,
   height: 630,
 }
-
 export const contentType = 'image/png'
 
-const getFont = async () => {
+const getFont = async (name) => {
+  const res = await fetch(new URL(`fonts/supreme/Supreme-Bold.ttf`, import.meta.url))
+  return await res.arrayBuffer()
+}
+
+const getMono = async () => {
   const res = await fetch(
     new URL('fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf', import.meta.url),
   )
   return await res.arrayBuffer()
 }
 
-// Image generation
 export default async function Image() {
-  // Font
-  const ibmPlexMono = getFont()
+  const [supremeFont, monoFont] = await Promise.all([getFont(), getMono()])
 
   return new ImageResponse(
     (
-      // ImageResponse JSX element
       <div
         style={{
           height: '100%',
           width: '100%',
           display: 'flex',
           flexDirection: 'column',
-          backgroundColor: themes.red.primary,
-          color: themes.red.secondary,
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '8px 48px',
-          fontFamily: 'IBM_Plex_Mono',
-          textTransform: 'uppercase',
+          backgroundColor: '#111111',
+          padding: '60px 80px',
+          position: 'relative',
         }}
       >
+        {/* Logo wordmark */}
         <div
           style={{
-            height: '100%',
-            width: '100%',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between',
-            fontSize: 14,
-            fontWeight: 400,
+            alignItems: 'center',
+            justifyContent: 'center',
+            flex: 1,
           }}
         >
-          <div
+          <span
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
+              fontFamily: 'Supreme',
+              fontSize: 160,
+              fontWeight: 700,
+              color: '#f5f0eb',
+              letterSpacing: '-0.04em',
+              lineHeight: 1,
             }}
           >
-            <div>darkroom.engineering</div>
-          </div>
-          <div
+            JWC
+          </span>
+        </div>
+
+        {/* Bottom bar */}
+        <div
+          style={{
+            display: 'flex',
+            width: '100%',
+            justifyContent: 'space-between',
+            alignItems: 'flex-end',
+            borderTop: '1px solid rgba(255,255,255,0.12)',
+            paddingTop: '28px',
+          }}
+        >
+          <span
             style={{
-              justifySelf: 'center',
-              alignSelf: 'center',
-              textAlign: 'center',
-              fontSize: 32,
-              fontWeight: 400,
+              fontFamily: 'IBMPlexMono',
+              fontSize: 18,
+              color: 'rgba(255,255,255,0.45)',
+              letterSpacing: '0.04em',
+              textTransform: 'uppercase',
             }}
           >
-            {AppData.name}
-          </div>
-          <div
+            Personal Training Berlin
+          </span>
+          <span
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
+              fontFamily: 'IBMPlexMono',
+              fontSize: 18,
+              color: 'rgba(255,255,255,0.45)',
+              letterSpacing: '0.04em',
+              textTransform: 'uppercase',
             }}
           >
-            <div>where things get developed</div>
-            <div>hi@darkroom.engineering</div>
-          </div>
+            Stronger. Fitter. Consistent.
+          </span>
         </div>
       </div>
     ),
-    // ImageResponse options
     {
       ...size,
       fonts: [
-        {
-          name: 'IBM_Plex_Mono',
-          data: await ibmPlexMono,
-          style: 'normal',
-          weight: 400,
-        },
+        { name: 'Supreme', data: supremeFont, style: 'normal', weight: 700 },
+        { name: 'IBMPlexMono', data: monoFont, style: 'normal', weight: 400 },
       ],
     },
   )

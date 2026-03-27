@@ -1,23 +1,26 @@
 import { ImageResponse } from 'next/og'
-import { themes } from 'styles/config.js'
 
-// Image metadata
 export const size = {
   width: 512,
   height: 512,
 }
 export const contentType = 'image/png'
 
-// Image generation
-// function can receive {params} prop to access dynamic route params
-export default function Icon() {
+const getFont = async () => {
+  const res = await fetch(
+    new URL('fonts/supreme/Supreme-Bold.ttf', import.meta.url),
+  )
+  return await res.arrayBuffer()
+}
+
+export default async function Icon() {
+  const font = await getFont()
+
   return new ImageResponse(
     (
       <div
         style={{
-          fontSize: 256,
-          background: themes.green.primary,
-          color: themes.green.secondary,
+          background: '#1a1a1a',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -25,14 +28,23 @@ export default function Icon() {
           justifyContent: 'center',
         }}
       >
-        RF
+        <span
+          style={{
+            fontFamily: 'Supreme',
+            fontSize: 320,
+            fontWeight: 700,
+            color: '#f5f0eb',
+            lineHeight: 1,
+            letterSpacing: '-0.04em',
+          }}
+        >
+          J
+        </span>
       </div>
     ),
-    // ImageResponse options
     {
-      // For convenience, we can re-use the exported icons size metadata
-      // config to also set the ImageResponse's width and height.
       ...size,
+      fonts: [{ name: 'Supreme', data: font, style: 'normal', weight: 700 }],
     },
   )
 }
