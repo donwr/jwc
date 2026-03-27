@@ -30,9 +30,6 @@ const CTASection: React.FC = () => {
             calConfig='{"layout":"month_view"}'
             className={styles.primaryBtn}
           />
-          <Link href="#angebote" className={styles.secondaryBtn}>
-            {t('secondaryButton')}
-          </Link>
         </div>
       </div>
     </section>

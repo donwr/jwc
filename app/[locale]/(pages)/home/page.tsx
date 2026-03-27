@@ -1,5 +1,6 @@
 import { Wrapper } from '../(components)/wrapper'
 import CTASection from './(components)/cta'
+import ContactSection from './(components)/contact-section'
 import FAQSection from './(components)/faq-section'
 import ForWhomSection from './(components)/for-whom'
 import HeroSection from './(components)/hero'
@@ -23,8 +24,9 @@ export default async function Home() {
         <HowItWorksSection />
         <OffersSection />
         <TestimonialsPlaceholder />
-        <FAQSection />
         <CTASection />
+        <ContactSection />
+        <FAQSection />
       </div>
     </Wrapper>
   )

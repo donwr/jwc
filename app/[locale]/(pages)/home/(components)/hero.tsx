@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import Image from 'next/image'
 import ScrollArrow from 'app/(pages)/about/scroll-arrow'
 import styles from '../home.module.scss'
 
@@ -33,9 +34,13 @@ const HeroSection: React.FC = () => {
       </div>
       <div className={styles.heroRight}>
         <div className={styles.heroImageMain}>
-          <div className={styles.placeholderImage}>
-            <span>{t('imageAlt')}</span>
-          </div>
+          <Image
+            src="/hero.jpg"
+            alt={t('imageAlt')}
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
         </div>
       </div>
       <ScrollArrow />

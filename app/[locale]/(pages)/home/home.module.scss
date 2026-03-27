@@ -85,7 +85,7 @@ $radius-lg: 12px;
   @include respond-to(md) {
     flex-direction: row;
     align-items: center;
-    padding: 0 4rem;
+    padding: 6rem 4rem 0;
   }
 }
 
@@ -115,6 +115,7 @@ $radius-lg: 12px;
 }
 
 .heroImageMain {
+  position: relative;
   width: 100%;
   max-width: 500px;
   aspect-ratio: 3/4;
@@ -284,6 +285,7 @@ $radius-lg: 12px;
 }
 
 .aboutImageSmall {
+  position: relative;
   width: 100%;
   max-width: 200px;
   aspect-ratio: 3/4;
@@ -1201,4 +1203,88 @@ $radius-lg: 12px;
   opacity: 0.7;
   max-width: 480px;
   margin-top: 0.75rem;
+}
+
+// ─── CONTACT SECTION ──────────────────────────────────
+.contactSection {
+  padding: 6rem 1.5rem;
+  background-color: $cream-dark;
+
+  @include respond-to(md) {
+    padding: 8rem 4rem;
+  }
+}
+
+.contactInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @include respond-to(md) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+}
+
+.contactLeft {
+  flex: 0 0 auto;
+
+  @include respond-to(md) {
+    width: 280px;
+  }
+}
+
+.contactLabel {
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $accent;
+  margin-bottom: 1rem;
+}
+
+.contactHeading {
+  font-family: var(--font-header);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+
+.contactSubheading {
+  font-size: 0.9rem;
+  color: $text-muted;
+  line-height: 1.6;
+  text-transform: none;
+  margin-bottom: 2rem;
+  max-width: 240px;
+}
+
+.contactMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactMetaItem {
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 0.8rem;
+  color: $text;
+  text-decoration: none;
+  text-transform: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.contactRight {
+  flex: 1;
 }

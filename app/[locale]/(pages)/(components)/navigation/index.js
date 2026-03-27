@@ -17,7 +17,7 @@ export function Navigation() {
     { href: '/#about', label: t('about') },
     { href: '/#angebote', label: t('offers') },
     { href: '/#faq', label: t('faq') },
-    { href: '/contact', label: t('contact') },
+    { href: '/#contact', label: t('contact') },
   ]
 
   useEffect(() => {

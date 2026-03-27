@@ -1,159 +1,94 @@
 @import 'utils';
 
-.page {
-  position: relative;
-  text-transform: uppercase;
-  font-family: var(--font-ibm-plex-mono);
+.contactForm {
+  width: 100%;
+}
 
-  .background {
-    height: 100%;
-    width: 100%;
-    opacity: 0.3;
-    z-index: 1;
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+
+  label {
+    font-size: 0.72rem;
+    font-family: var(--font-ibm-plex-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8b8178;
   }
 
-  .wrapper {
-    position: relative;
-    min-height: 100vh;
-    padding: 2rem;
-
-    margin: 0;
+  .inputField {
     width: 100%;
-    padding: 5rem var(--layout-padding);
-    z-index: 2;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #1a1a1a;
+    font-size: 0.9rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    text-transform: none;
 
-    @include respond-to(lg) {
-      padding: 4rem var(--layout-padding);
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.25);
     }
 
-    h1 {
-      font-size: 2.5rem;
-      color: #fff;
-      margin-bottom: 1rem;
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.4);
+      background-color: #fff;
+      outline: none;
     }
+  }
 
-    p {
-      color: #bbb;
-      margin-bottom: 2rem;
-      font-size: 0.8rem;
-    }
+  textarea.inputField {
+    min-height: 130px;
+    resize: none;
+  }
 
-    .contactForm {
-      width: 100%;
-      max-width: 1200px;
-      grid-column: span 12;
+  .error {
+    color: #c0392b;
+    font-size: 0.75rem;
+    font-family: var(--font-ibm-plex-mono);
+  }
+}
 
-      @include respond-to(lg) {
-        grid-column: span 6;
-      }
+.submitButton {
+  align-self: flex-start;
+  padding: 0.85rem 2.5rem;
+  border: none;
+  border-radius: 100px;
+  background-color: #1a1a1a;
+  color: #f5f0eb;
+  font-size: 0.75rem;
+  font-family: var(--font-ibm-plex-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s ease;
 
-      .formContainer {
-        padding: 2rem;
-        background: #222;
+  &:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
 
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
-      }
-
-      .formField {
-        margin-bottom: 1.5rem;
-
-        label {
-          color: #bbb;
-          font-size: 1rem;
-          display: block;
-          margin-bottom: 0.5rem;
-        }
-
-        .inputField {
-          width: 100%;
-          padding: 0.75rem;
-          border: 1px solid #444;
-          background-color: #333;
-          color: #fff;
-          font-size: 1rem;
-          transition: border-color 0.2s ease;
-          text-transform: none;
-
-          &:focus {
-            border-color: #4a90e2;
-            outline: none;
-          }
-        }
-
-        textarea.inputField {
-          min-height: 150px;
-          resize: none;
-        }
-
-        .error {
-          color: #e74c3c;
-          font-size: 0.85rem;
-          margin-top: 0.25rem;
-        }
-      }
-
-      .submitButton {
-        width: 100%;
-        padding: 1rem;
-        border: none;
-        border-radius: 25px;
-        background-color: #fff;
-        color: #000;
-        font-size: 1.25rem;
-        cursor: pointer;
-        margin-top: 1rem;
-        text-align: center;
-
-        &:disabled {
-          background: #555;
-          cursor: not-allowed;
-        }
-      }
-    }
-
-    .contactPageSidebar {
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-      grid-column: span 12;
-      font-size: 0.8rem;
-
-      @include respond-to(lg) {
-        grid-column: span 6;
-      }
-
-      h2 {
-        margin-bottom: 1.5rem;
-      }
-
-      p {
-        font-weight: bold;
-        margin-bottom: 1.5rem;
-      }
-
-      .contactDetails {
-        line-height: 1.5;
-        font-weight: bold;
-
-        .socialIcons {
-          margin-top: 1.5rem;
-          display: flex;
-          justify-content: center;
-          gap: 1rem;
-
-          i {
-            cursor: pointer;
-            transition: color 0.2s ease;
-
-            &:hover {
-              color: #fff;
-            }
-          }
-        }
-      }
-    }
+  &:not(:disabled):hover {
+    opacity: 0.8;
   }
 }

@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../home.module.scss'
 
 const PersonalTrainerIntro: React.FC = () => {
@@ -16,9 +17,12 @@ const PersonalTrainerIntro: React.FC = () => {
 
         <div className={styles.aboutImageRow}>
           <div className={styles.aboutImageSmall}>
-            <div className={styles.placeholderImageDark}>
-              <span>{t('imageAlt1')}</span>
-            </div>
+            <Image
+              src="/about-01.jpg"
+              alt={t('imageAlt1')}
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
           <div className={styles.aboutBody}>
             <p>{t('description')}</p>
@@ -27,9 +31,12 @@ const PersonalTrainerIntro: React.FC = () => {
             </Link>
           </div>
           <div className={styles.aboutImageSmall}>
-            <div className={styles.placeholderImage}>
-              <span>{t('imageAlt2')}</span>
-            </div>
+            <Image
+              src="/about-02.jpg"
+              alt={t('imageAlt2')}
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
         </div>
       </div>
