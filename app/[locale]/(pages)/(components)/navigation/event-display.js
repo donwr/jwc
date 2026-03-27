@@ -59,7 +59,7 @@ export const EventDisplay = () => {
             ) : (
               <button
                 aria-label="workout session"
-                data-cal-link="jesstrainer/erstgespraech"
+                data-cal-link="jwc-training-pf0zsk/initial-consultation"
                 data-cal-config='{"layout":"month_view"}'
                 className={s.otherText}
               >

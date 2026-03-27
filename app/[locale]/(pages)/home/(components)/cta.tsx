@@ -1,12 +1,16 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
 import CalButton from 'app/(pages)/(components)/buttons/cal-button'
 import styles from '../home.module.scss'
 
 const CTASection: React.FC = () => {
   const t = useTranslations('home.cta')
+  const locale = useLocale()
+  const calLink = locale === 'de'
+    ? 'jwc-training-pf0zsk/vorstellungsgespraech'
+    : 'jwc-training-pf0zsk/initial-consultation'
 
   return (
     <section id="cta" className={styles.ctaSection}>
@@ -26,7 +30,7 @@ const CTASection: React.FC = () => {
         <div className={styles.ctaButtons}>
           <CalButton
             text={t('primaryButton')}
-            calLink="jesstrainer/erstgespraech"
+            calLink={calLink}
             calConfig='{"layout":"month_view"}'
             className={styles.primaryBtn}
           />
