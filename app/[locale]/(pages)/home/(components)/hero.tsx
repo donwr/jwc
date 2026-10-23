@@ -17,20 +17,20 @@ const HeroSection: React.FC = () => {
           <br />
           <span className={styles.heroTitleAccent}>{t('titleAccent')}</span>
         </h1>
-        <p className={styles.heroSubtitle}>
-          {t('subtitle')}
-        </p>
-        <p className={styles.heroSubtitle}>
-          {t('description')}
-        </p>
+        <p className={styles.heroSubtitle}>{t('subtitle')}</p>
         <div className={styles.heroCtas}>
-          <Link href="#cta" className={styles.primaryBtn}>
+          <Link href="#contact" className={styles.primaryBtn}>
             {t('ctaButton')} &rarr;
           </Link>
           <Link href="#angebote" className={styles.secondaryBtn}>
             {t('offersButton')}
           </Link>
         </div>
+        <ul className={styles.heroTrust}>
+          {(t.raw('trust') as string[]).map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
       </div>
       <div className={styles.heroRight}>
         <div className={styles.heroImageMain}>

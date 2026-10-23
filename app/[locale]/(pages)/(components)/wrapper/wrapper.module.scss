@@ -1,4 +1,12 @@
+@import 'utils';
+
 .wrapper {
+  --banner-height: 0px;
+
+  &.hasBanner {
+    --banner-height: 2rem;
+  }
+
   background-color: var(--theme-primary);
   color: var(--theme-secondary);
   min-height: 100vh;

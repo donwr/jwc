@@ -29,6 +29,26 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = (props) => (
         <strong>Email:</strong> {props.email}
       </p>
     )}
+    {props.phoneNumber && (
+      <p>
+        <strong>Phone:</strong> {props.phoneNumber}
+      </p>
+    )}
+    {props.goal && (
+      <p>
+        <strong>Ziel:</strong> {props.goal}
+      </p>
+    )}
+    {props.frequency && (
+      <p>
+        <strong>Training pro Woche:</strong> {props.frequency}
+      </p>
+    )}
+    {props.whyNow && (
+      <p>
+        <strong>Warum jetzt:</strong> {props.whyNow}
+      </p>
+    )}
     {props.message && (
       <p>
         <strong>Message:</strong> {props.message}

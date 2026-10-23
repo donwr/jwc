@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "JD — Personal Training Berlin",
-    "titleTemplate": "%s — JD Personal Training",
-    "description": "Personal training, coaching and custom training plans in Berlin and online. Strength building, functional training, athletics — with structure, progression and real coaching."
+    "title": "JWC · Personal Training Berlin",
+    "titleTemplate": "%s · JWC Personal Training",
+    "description": "Personal training in Berlin and online for people who are serious: build muscle, lose fat, stay consistent."
   },
   "nav": {
     "start": "Home",
@@ -10,36 +10,69 @@
     "offers": "Services",
     "faq": "FAQ",
     "contact": "Contact",
-    "bookCall": "Book a call"
+    "bookCall": "Apply now"
   },
   "home": {
     "hero": {
-      "titleLine1": "STRONGER. FITTER.",
-      "titleAccent": "CONSISTENCY PRO.",
-      "subtitle": "Coaching that truly fits you.",
-      "description": "Personal training, coaching & custom training plans — in Berlin or online. I help you get stronger, fitter and more structured — with training and coaching that truly fits you.",
-      "ctaButton": "Book a call now",
+      "titleLine1": "STRUCTURE",
+      "titleAccent": "OVER MOTIVATION.",
+      "subtitle": "Personal training in Berlin and online. For people who want to build muscle, lose fat and finally stay consistent.",
+      "ctaButton": "Apply now",
       "offersButton": "View services",
-      "imageAlt": "Jess Personal Trainer"
+      "imageAlt": "Jess Personal Trainer",
+      "trust": [
+        "Ex-ALBA Berlin youth Bundesliga",
+        "Prep School USA",
+        "Head Coach RISMO Fitness",
+        "Athletic coach Moabit Lions"
+      ]
     },
     "marquee": {
-      "items": ["STRUCTURE", "PROGRESSION", "COACHING", "CONSISTENCY", "STRENGTH", "ATHLETICS"]
+      "items": [
+        "STRUCTURE",
+        "PROGRESSION",
+        "COACHING",
+        "CONSISTENCY",
+        "STRENGTH",
+        "ATHLETICS"
+      ]
     },
     "about": {
       "heading": "ABOUT ME",
-      "description": "I'm Jess, a personal trainer from Berlin with a background in performance sport, athletics and basketball. My focus is on strength building, fitness, functional training, stability and real consistency. I don't work with aimless training or short-term motivation — I work with structure, progression and coaching that truly fits you and your daily life.",
-      "button": "Learn more",
+      "description": "I'm Jess, a personal trainer from Berlin. I played for years for ALBA Berlin in the youth Bundesliga and then at a prep school in the USA. Today I'm Head Coach at RISMO Fitness and athletic coach of the Moabit Lions.",
+      "button": "Apply now",
       "imageAlt1": "Training",
-      "imageAlt2": "Coaching"
+      "imageAlt2": "Coaching",
+      "description2": "Competitive sport taught me that results come from structure, technique and progression. Motivation helps you start, consistency gets you there. That is exactly how I coach you."
     },
     "forWhom": {
-      "heading": "MY COACHING IS IDEAL FOR YOU IF YOU…",
-      "items": [
-        "Need a plan that truly fits you",
-        "Want to approach your training seriously and with a system",
-        "Are looking for support and accountability",
-        "Want to not just start, but actually stick with it"
-      ]
+      "heading": "WHO IT'S FOR",
+      "goals": [
+        {
+          "tag": "BUILD",
+          "title": "Finally build up",
+          "text": "You feel too skinny, you train, and still nothing changes? It's rarely genetics. It's usually the plan and the nutrition. You get both: strength training with clear progression and a nutrition plan that helps you gain on purpose, focused on muscle rather than just weight.",
+          "items": [
+            "Strength training with progression, clean technique from day one",
+            "Nutrition plan for building: calories and protein tailored to you",
+            "Regular check-ins: weight, strength numbers, photos"
+          ]
+        },
+        {
+          "tag": "SHAPE",
+          "title": "Lose fat, gain muscle",
+          "text": "Just losing weight won't make you fit. We reduce fat while building or keeping muscle, with strength training and nutrition that fits your daily life. Whether it's booty goals, a defined upper body or simply getting back in shape.",
+          "items": [
+            "Strength training instead of endless cardio",
+            "Nutrition without crash diets, built for everyday life",
+            "Measurable goals: measurements, strength numbers, photos"
+          ]
+        }
+      ],
+      "notFor": {
+        "heading": "Who it's not for",
+        "text": "Honestly: my coaching isn't for you if you're looking for a quick fix or just want to try it out. It's for you if you're ready to stay consistent for at least 3 months. Age and fitness level don't matter, your mindset does."
+      }
     },
     "whatMakesDifferent": {
       "heading": "WHAT MAKES MY COACHING DIFFERENT",
@@ -89,18 +122,50 @@
           "honest feedback and guidance"
         ],
         "pricing": {
-          "single": { "label": "1h", "price": "€89" },
-          "pack5": { "label": "5-pack", "price": "€399" },
-          "pack10": { "label": "10-pack", "price": "€750" },
-          "monthly1x": { "label": "Monthly (1x/week)", "price": "€239 / month" },
-          "monthly2x": { "label": "Monthly (2x/week)", "price": "€450 / month" }
+          "start2x": {
+            "label": "Starter spot 2x/week",
+            "price": "€399 / month",
+            "was": "€450",
+            "note": "min. 3 months",
+            "badge": "Popular"
+          },
+          "start1x": {
+            "label": "Starter spot 1x/week",
+            "price": "€199 / month",
+            "was": "€239",
+            "note": "min. 3 months"
+          },
+          "monthly2x": {
+            "label": "Membership 2x/week",
+            "price": "€450 / month",
+            "note": "nutrition plan included"
+          },
+          "monthly1x": {
+            "label": "Membership 1x/week",
+            "price": "€239 / month",
+            "note": "nutrition plan included"
+          },
+          "aboNote": "If you want to stay consistent, take a membership.",
+          "single": {
+            "label": "Single session",
+            "price": "€89"
+          },
+          "pack10": {
+            "label": "10-pack",
+            "price": "€750"
+          },
+          "trial": {
+            "label": "Trial session",
+            "price": "€49",
+            "note": "credited when you sign up"
+          }
         },
-        "button": "Request personal training",
-        "ctaButton": "Book a call now"
+        "button": "Apply now",
+        "startBox": "Until 30 Nov I'm taking on 3 new clients at a starter price. In return you commit to at least 3 months and give me honest feedback."
       },
       "trainingPlan": {
-        "title": "Custom Training Plan",
-        "subtitle": "Your plan. Clearly structured. Tailored to you.",
+        "title": "Plan",
+        "subtitle": "Custom training plan",
         "description": "You want to train independently, but finally with a plan that truly fits you? Then this is your perfect entry point.",
         "description2": "I create an individual training plan based on a questionnaire and an initial consultation, so I can properly assess your goals, current level, daily routine, equipment and any limitations.",
         "steps": [
@@ -117,48 +182,44 @@
           "no ongoing support included"
         ],
         "delivery": "Usually within 3–5 days (often faster)",
-        "price": "€59",
-        "button": "Start your training plan"
+        "price": "€59 one-time",
+        "button": "Apply now",
+        "forYou": "For you if you know how to train, but not what to do."
       },
       "coaching": {
-        "title": "Training Plan + Support",
-        "subtitle": "Structure, support and accountability — fully online",
-        "description": "You don't just want a training plan, but also feedback, adjustments and someone who keeps you on track? Then this is the right offer for you.",
-        "description2": "The support is fully online. You train independently, but can message me anytime with questions about your workouts, exercises, weights or progress. I typically respond within 10 hours.",
-        "description3": "I'm not just your coach — I'm also your accountability partner: someone who thinks along, motivates and makes sure you actually stick with it.",
+        "title": "Coaching",
+        "subtitle": "Plan, nutrition and support — fully online",
+        "description": "You want more than a training plan: a nutrition plan, feedback and someone who keeps you on track? Then Coaching is for you.",
+        "description2": "Support is fully online. You train on your own but can message me on WhatsApp any time with questions about your workouts, exercises, weights or progress. I usually reply within 10 hours at most.",
         "features": [
-          "individual training plan",
-          "questionnaire + initial consultation",
-          "ongoing online support",
+          "custom training plan",
+          "custom nutrition plan",
+          "WhatsApp support",
+          "check-in every 2 weeks",
           "adjustment of weights and exercises",
-          "alternative exercises when needed",
-          "accountability and honest feedback",
-          "check-up calls as needed"
+          "accountability and honest feedback"
         ],
-        "packages": {
-          "weeks4": { "title": "4 weeks", "price": "€99" },
-          "weeks8": { "title": "8 weeks", "price": "€179" },
-          "weeks12": { "title": "12 weeks", "price": "€249" }
-        },
-        "button": "Start online coaching"
+        "button": "Apply now",
+        "forYou": "For you if you need a plan and someone to keep you on track.",
+        "price": "€99 / month"
       },
       "vip": {
-        "title": "VIP Coaching",
-        "subtitle": "Exclusive. Close. Personal.",
-        "description": "You don't just want training — you want a personal coach who works exclusively with you, addresses your needs and closely supports you? Then VIP Coaching is the most intensive form of collaboration.",
-        "description2": "This isn't just about workouts — it's about training, nutrition guidance, support, accountability and a much closer level of guidance, individually tailored to you and your daily life.",
+        "title": "VIP",
+        "subtitle": "Online coaching plus in-person training",
+        "description": "You get everything in Coaching, plus two in-person training sessions with me in Berlin every month.",
+        "description2": "In the in-person sessions we check technique, strength numbers and progress and adjust your plan on the spot.",
         "features": [
-          "individual coaching",
-          "closer and more personal guidance",
-          "training and structure",
-          "nutrition guidance",
-          "ongoing support",
-          "accountability",
-          "direct communication and close adjustments"
+          "everything in Coaching",
+          "2 in-person personal training sessions per month",
+          "training plan and nutrition plan",
+          "WhatsApp support",
+          "check-in every 2 weeks"
         ],
-        "price": "Price on request",
-        "button": "Request VIP coaching"
-      }
+        "price": "€279 / month",
+        "button": "Apply now",
+        "forYou": "For you if you want support both online and in person."
+      },
+      "onlineLabel": "Online coaching in 3 tiers"
     },
     "faq": {
       "label": "FAQ",
@@ -169,8 +230,24 @@
           "answer": "In the initial consultation, we look at your goal, your current level and your circumstances together. This helps me better assess which offer makes the most sense for you and what the best start looks like."
         },
         {
-          "question": "What's the difference between the training plan and the training plan + support?",
-          "answer": "With the individual training plan, you get a clear, tailored plan that you follow independently. With the training plan + support, you also get ongoing support, adjustments, feedback and accountability. In other words: you're not alone with your training and can ask questions anytime."
+          "question": "Where does the training take place?",
+          "answer": "1:1 training takes place in Berlin, coaching is fully online. We'll agree on the exact location in the initial call."
+        },
+        {
+          "question": "How much is the trial session?",
+          "answer": "€49. The amount is credited when you sign up for a membership."
+        },
+        {
+          "question": "Is there a minimum term?",
+          "answer": "Starter spots run for at least 3 months. Regular memberships can be cancelled monthly after 3 months."
+        },
+        {
+          "question": "Do I get a nutrition plan too?",
+          "answer": "Yes, in every membership and online from the Coaching tier up."
+        },
+        {
+          "question": "What's the difference between Plan and Coaching?",
+          "answer": "With Plan you get a clear training plan tailored to you that you follow on your own. With Coaching you also get a nutrition plan, WhatsApp support, check-ins every 2 weeks and adjustments. That means you're not alone with your training and can ask questions any time."
         },
         {
           "question": "Is the support for online offers completely digital?",
@@ -182,15 +259,15 @@
         },
         {
           "question": "What if I don't know how to do an exercise?",
-          "answer": "No problem. If you've booked the training plan + support, just message me. Depending on the situation, I'll send you example videos, explanations or suitable alternatives. The important thing is: you should be able to perform the exercises safely and correctly."
+          "answer": "No problem. If you've booked Coaching, just message me. Depending on the situation I'll send you example videos, explanations or suitable alternatives. What matters is that you can do the exercises safely and with good form."
         },
         {
           "question": "Can I switch from the training plan to personal training later?",
-          "answer": "Yes, of course. If you feel you want more direct guidance, corrections or personal support, we can switch from the training plan to 1:1 personal training or VIP coaching at any time."
+          "answer": "Yes, of course. If you feel you want more direct guidance, corrections or personal support, we can switch from Plan to 1:1 personal training or VIP at any time."
         },
         {
-          "question": "Who is VIP Coaching for?",
-          "answer": "VIP Coaching is ideal if you don't just want a plan, but are looking for closer, more personal and more exclusive guidance — with more support, more structure and more direct communication."
+          "question": "Who is VIP for?",
+          "answer": "VIP is ideal if you want online coaching plus training in person with me twice a month."
         },
         {
           "question": "How does the individual training plan work?",
@@ -215,8 +292,36 @@
       "titleLine2": "TRAIN WITH",
       "titleAccent": "STRUCTURE?",
       "subtitle": "Whether personal training, custom training plan or online coaching — we'll find the path that fits you.",
-      "primaryButton": "Book a call now",
+      "primaryButton": "Apply now",
       "secondaryButton": "Choose a service"
+    },
+    "apply": {
+      "label": "Application",
+      "heading": "Apply now",
+      "subheading": "Tell me briefly about your goal. I'll get back to you within 24 hours.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "goal": "Your goal",
+      "goalOptions": {
+        "build": "BUILD · Build up",
+        "shape": "SHAPE · Lose fat, gain muscle",
+        "other": "Other"
+      },
+      "frequency": "How often can you train per week?",
+      "select": "Please choose",
+      "whyNow": "Why now?",
+      "whyNowPlaceholder": "Why do you want to start right now?",
+      "message": "Anything else? (optional)",
+      "required": "Required",
+      "invalidEmail": "Invalid email address",
+      "submit": "Send application",
+      "submitting": "Sending …",
+      "error": "Something went wrong. Please try again.",
+      "successHeading": "Thanks for applying!",
+      "successText": "Book your free 15-minute call now so we can talk about your goal.",
+      "bookCall": "Book 15-minute call"
     }
   },
   "about": {
@@ -224,7 +329,7 @@
     "section1": {
       "subheader": "Background",
       "header": "Performance, Athletics & Basketball",
-      "description1": "I'm Jess, a personal trainer from Berlin with a background in performance sport, athletics and basketball. My focus is on strength building, fitness, functional training, stability and real consistency.",
+      "description1": "I'm Jess, a personal trainer from Berlin. I played for years for ALBA Berlin in the youth Bundesliga and then at a prep school in the USA. Today I'm Head Coach at RISMO Fitness and athletic coach of the Moabit Lions.",
       "description2": "I don't work with aimless training or short-term motivation — I work with structure, progression and coaching that truly fits you and your daily life."
     },
     "section2": {
@@ -243,7 +348,7 @@
   "contact": {
     "title": "Contact / Book a call",
     "description": "If you have questions or want to get started right away, just book a call or message me directly.",
-    "email": "Email: jess@trainer.de",
+    "email": "Email: jwctrainingberlin@gmail.com",
     "form": {
       "firstName": "First Name *",
       "lastName": "Last Name *",
@@ -284,16 +389,16 @@
         "duration": "4–6 weeks"
       },
       "coaching": {
-        "program": "Training Plan + Support",
-        "description": "Structure, support and accountability — fully online. From €99.",
+        "program": "Coaching",
+        "description": "Plan, nutrition plan, WhatsApp support and a check-in every 2 weeks. €99 / month.",
         "type": "Online Support",
-        "duration": "4–12 weeks"
+        "duration": "Monthly"
       },
       "vip": {
-        "program": "VIP Coaching",
-        "description": "Exclusive. Close. Personal. The most intensive form of collaboration.",
+        "program": "VIP",
+        "description": "Coaching plus 2 in-person personal training sessions per month. €279 / month.",
         "type": "Exclusive Coaching",
-        "duration": "On request"
+        "duration": "Monthly"
       }
     }
   },
@@ -326,12 +431,12 @@
   "footer": {
     "contact": "CONTACT",
     "emailLink": "Email",
-    "bookCall": "Book a call",
+    "bookCall": "Apply now",
     "offers": "SERVICES",
     "personalTraining": "Personal Training",
     "trainingPlan": "Training Plan",
-    "coaching": "Training Plan + Support",
-    "vip": "VIP Coaching",
+    "coaching": "Coaching",
+    "vip": "VIP",
     "tagline": "STRUCTURE OVER MOTIVATION",
     "privacy": "PRIVACY POLICY",
     "terms": "TERMS OF SERVICE",
@@ -369,14 +474,14 @@
       "contactInfo": {
         "title": "Contact Information",
         "content": "For any questions about these Terms of Service, please contact us:",
-        "email": "By email: jess@trainer.de",
-        "phone": "By phone: (917) 426 0289"
+        "email": "By email: jwctrainingberlin@gmail.com",
+        "phone": "By phone: +49 156 79614147"
       }
     },
     "policy": {
       "title": "Privacy Policy",
       "lastUpdated": "Last Updated: September 8, 2023",
-      "intro": "This Privacy Policy describes how Jess Personal Training collects, uses, and discloses your Personal Information when you visit or use our jesstrainer.de.",
+      "intro": "This Privacy Policy describes how Jess Personal Training collects, uses, and discloses your Personal Information when you visit or use our jwctraining.de.",
       "collect": {
         "title": "Information We Collect",
         "intro": "We collect various types of information for various purposes to provide and improve our service to you.",
@@ -409,12 +514,19 @@
       "contactUs": {
         "title": "Contact Us",
         "content": "If you have any questions about this Privacy Policy, please contact us:",
-        "email": "By email: jess@trainer.de"
+        "email": "By email: jwctrainingberlin@gmail.com"
       }
     }
   },
   "menu": {
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
+  },
+  "banner": {
+    "text": "Only 3 starter spots until 30 Nov.",
+    "cta": "Apply now"
+  },
+  "whatsapp": {
+    "label": "Message me on WhatsApp"
   }
 }

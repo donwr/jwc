@@ -55,9 +55,9 @@ export const workoutCategories: OfferProgram[] = [
     id: 3,
     program: 'Online-Coaching',
     description:
-      'Für dich, wenn du einen Plan brauchst UND jemanden, der dranbleibt. Trainingsplan + laufende Betreuung ab 99 €.',
+      'Für dich, wenn du einen Plan brauchst UND jemanden, der dranbleibt. Plan, Ernährungsplan und WhatsApp-Support für 99 € / Monat.',
     type: 'Online-Betreuung',
-    duration: '4–12 Wochen',
+    duration: 'Monatlich',
     icon: <ChatsCircle />,
     calendar: {
       calLink: 'jesstrainer/online-coaching',

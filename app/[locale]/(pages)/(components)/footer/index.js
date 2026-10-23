@@ -18,7 +18,7 @@ export function Footer() {
                       <a href="tel:+4915679614147">+49 156 79614147</a>
                     </li>
                     <li>
-                      <a href="#cta">Call buchen</a>
+                      <a href="/#contact">Jetzt bewerben</a>
                     </li>
                   </ul>
                 </div>

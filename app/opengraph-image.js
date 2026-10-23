@@ -10,7 +10,9 @@ export const size = {
 export const contentType = 'image/png'
 
 const getFont = async (name) => {
-  const res = await fetch(new URL(`fonts/supreme/Supreme-Bold.ttf`, import.meta.url))
+  const res = await fetch(
+    new URL(`fonts/supreme/Supreme-Bold.ttf`, import.meta.url),
+  )
   return await res.arrayBuffer()
 }
 
@@ -94,7 +96,7 @@ export default async function Image() {
               textTransform: 'uppercase',
             }}
           >
-            Stronger. Fitter. Consistent.
+            Struktur statt Motivation
           </span>
         </div>
       </div>

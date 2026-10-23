@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
         <p>
           This Privacy Policy describes how Jess Personal Training collects,
           uses, and discloses your Personal Information when you visit or use
-          our jesstrainer.de.
+          our jwctraining.de.
         </p>
 
         <h3>Information We Collect</h3>
@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <ul>
-          <li>By email: jess@trainer.de</li>
+          <li>By email: jwctrainingberlin@gmail.com</li>
         </ul>
       </div>
     </Wrapper>

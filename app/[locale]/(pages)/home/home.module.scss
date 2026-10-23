@@ -156,6 +156,25 @@ $radius-lg: 12px;
   flex-wrap: wrap;
 }
 
+.heroTrust {
+  list-style: none;
+  padding: 1.25rem 0 0;
+  margin: 2rem 0 0;
+  border-top: 1px solid $border;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  max-width: 520px;
+
+  li {
+    font-family: var(--font-ibm-plex-mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $text-muted;
+  }
+}
+
 .primaryBtn {
   display: inline-flex;
   align-items: center;
@@ -637,18 +656,49 @@ $radius-lg: 12px;
   margin: -1px 0;
   padding: 0 2rem;
 
-  h3 { color: $cream; }
+  h3 {
+    color: $cream;
+  }
 
-  p, ul li { color: rgba(255, 255, 255, 0.65); }
-  ul li::before { color: rgba(255, 255, 255, 0.3); }
+  p,
+  ul li {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  ul li::before {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
-  .offerItemSub { color: rgba(255, 255, 255, 0.5); }
-  .offerItemNum { color: rgba(255, 255, 255, 0.25); }
-  .offerItemToggle { color: $cream; opacity: 0.6; }
+  .offerItemSub {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .offerItemNum {
+    color: rgba(255, 255, 255, 0.25);
+  }
+  .offerItemToggle {
+    color: $cream;
+    opacity: 0.6;
+  }
 
   .pricingRow {
     border-color: rgba(255, 255, 255, 0.08);
-    span:last-child { color: $cream; }
+    span:last-child {
+      color: $cream;
+    }
+    small {
+      color: rgba(255, 255, 255, 0.45);
+    }
+  }
+
+  .pricingBadge {
+    background: $cream;
+    color: $text;
+  }
+  .startBox {
+    background: rgba(255, 255, 255, 0.08);
+    color: $cream;
+  }
+  .offerForYou {
+    color: $cream !important;
   }
 
   .offerBtn {
@@ -672,7 +722,10 @@ $radius-lg: 12px;
 
   .packageRow {
     border-color: rgba(255, 255, 255, 0.08);
-    span:last-child { color: $cream; font-weight: 700; }
+    span:last-child {
+      color: $cream;
+      font-weight: 700;
+    }
   }
 }
 
@@ -693,7 +746,6 @@ $radius-lg: 12px;
     padding: 2rem 0;
   }
 }
-
 
 .offerItemMeta {
   display: flex;
@@ -735,7 +787,6 @@ $radius-lg: 12px;
   padding-bottom: 2.5rem;
 }
 
-
 .offerItemContent {
   display: flex;
   flex-direction: column;
@@ -748,7 +799,6 @@ $radius-lg: 12px;
   }
 }
 
-
 .offerItemLeft {
   flex: 1;
 }
@@ -757,7 +807,7 @@ $radius-lg: 12px;
   flex-shrink: 0;
 
   @include respond-to(lg) {
-    width: 280px;
+    width: 340px;
   }
 }
 
@@ -818,6 +868,56 @@ $radius-lg: 12px;
   span:last-child {
     font-weight: 700;
   }
+}
+
+.pricingRowSmall {
+  font-size: 0.78rem;
+  color: $text-muted;
+}
+
+.pricingBadge {
+  align-self: flex-start;
+  font-style: normal;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 100px;
+  background: $text;
+  color: $cream;
+}
+
+.pricingNote {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: $text-muted;
+  padding: 0.6rem 0 0.2rem;
+  margin: 0;
+}
+
+.startBox {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  padding: 1rem 1.25rem;
+  border-radius: $radius;
+  background: $text;
+  color: $cream;
+  margin: 0;
+}
+
+.offersSubLabel {
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $accent;
+  margin: 2.5rem 0 0.75rem;
+}
+
+.offerForYou {
+  font-weight: 700;
+  color: $text !important;
 }
 
 // ─── FAQ SECTION ───────────────────────────────────────
@@ -1021,8 +1121,64 @@ $radius-lg: 12px;
 }
 
 .forWhomContainer {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
+}
+
+.forWhomGoals {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @include respond-to(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.forWhomGoal,
+.forWhomNot {
+  padding: 1.75rem;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+
+  .forWhomList {
+    gap: 0.75rem;
+  }
+
+  .forWhomItem {
+    font-size: 0.9rem;
+  }
+}
+
+.forWhomNot {
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.03);
+
+  .forWhomText {
+    margin-bottom: 0;
+  }
+}
+
+.forWhomTag {
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: $accent;
+  margin-bottom: 0.5rem;
+}
+
+.forWhomGoalTitle {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.forWhomText {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: $text-muted;
+  margin-bottom: 1.5rem;
 }
 
 .forWhomHeading {
@@ -1126,8 +1282,24 @@ $radius-lg: 12px;
     border-bottom: none;
   }
 
+  gap: 1rem;
+
+  span {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
   span:last-child {
     font-weight: 700;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  small {
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: $text-muted;
   }
 }
 

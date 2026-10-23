@@ -19,8 +19,8 @@ export async function POST(request: Request) {
 
     const type = 'Feedback Form'
     const { data, error } = await resend.emails.send({
-      from: 'Jess Training <no-reply@jesstrainer.de>',
-      to: ['jess@trainer.de'],
+      from: 'Jess Training <no-reply@notifications.jwctraining.de>',
+      to: ['jwctrainingberlin@gmail.com'],
       subject: 'New Feedback Form Submission',
       react: EmailTemplate({
         firstName,

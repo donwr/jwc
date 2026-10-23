@@ -2,6 +2,7 @@
 
 .nav {
   position: fixed;
+  top: var(--banner-height, 0px);
   font-size: 0.75rem;
   height: 4rem;
   width: 100%;
@@ -19,7 +20,9 @@
     background-color: rgba(245, 240, 235, 0.95);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      border-radius 0.3s ease;
   }
 
   .navWrapper {

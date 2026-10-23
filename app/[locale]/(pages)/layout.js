@@ -13,7 +13,7 @@ import { ToastContainer } from './(components)/toast/toast-container'
 import { routing } from '../../../i18n/routing'
 
 const APP_BASE_URL =
-  process.env.NEXT_PUBLIC_BASE_URL || 'https://jesstrainer.de'
+  process.env.NEXT_PUBLIC_BASE_URL || 'https://jwctraining.de'
 
 export async function generateMetadata({ params }) {
   const { locale } = await params
@@ -33,7 +33,8 @@ export async function generateMetadata({ params }) {
         default: t('title'),
         template: t('titleTemplate'),
       },
-      images: `${APP_BASE_URL}/og.png`,
+      description: t('description'),
+      images: `${APP_BASE_URL}/opengraph-image`,
     },
     twitter: {
       card: 'summary_large_image',
@@ -42,6 +43,7 @@ export async function generateMetadata({ params }) {
         template: t('titleTemplate'),
       },
       description: t('description'),
+      images: `${APP_BASE_URL}/opengraph-image`,
     },
   }
 }

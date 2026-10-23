@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "JD — Personal Training Berlin",
-    "titleTemplate": "%s — JD Personal Training",
-    "description": "Personal Training, Coaching und individuelle Trainingspläne in Berlin und online. Kraftaufbau, funktionelles Training, Athletik — mit Struktur, Progression und echtem Coaching."
+    "title": "JWC · Personal Training Berlin",
+    "titleTemplate": "%s · JWC Personal Training",
+    "description": "Personal Training in Berlin und online für Leute, die es ernst meinen: Muskelaufbau, Fett verlieren, Konstanz."
   },
   "nav": {
     "start": "Start",
@@ -10,36 +10,69 @@
     "offers": "Angebote",
     "faq": "FAQ",
     "contact": "Kontakt",
-    "bookCall": "Call buchen"
+    "bookCall": "Jetzt bewerben"
   },
   "home": {
     "hero": {
-      "titleLine1": "STRONGER. FITTER.",
-      "titleAccent": "CONSISTENCY PRO.",
-      "subtitle": "Durch Coaching, das wirklich zu dir passt.",
-      "description": "Personal Training, Coaching & individuelle Trainingspläne – in Berlin oder online. Ich helfe dir, stärker, fitter und strukturierter zu werden – mit Training und Coaching, das wirklich zu dir passt.",
-      "ctaButton": "Jetzt Call buchen",
+      "titleLine1": "STRUKTUR",
+      "titleAccent": "STATT MOTIVATION.",
+      "subtitle": "Personal Training in Berlin und online. Für Leute, die Muskeln aufbauen, Fett verlieren und endlich konstant bleiben wollen.",
+      "ctaButton": "Jetzt bewerben",
       "offersButton": "Angebote ansehen",
-      "imageAlt": "Jess Personal Trainer"
+      "imageAlt": "Jess Personal Trainer",
+      "trust": [
+        "Ex-ALBA Berlin Nachwuchs-Bundesliga",
+        "Prep School USA",
+        "Head Coach RISMO Fitness",
+        "Athletiktrainer Moabit Lions"
+      ]
     },
     "marquee": {
-      "items": ["STRUKTUR", "PROGRESSION", "COACHING", "KONSTANZ", "KRAFTAUFBAU", "ATHLETIK"]
+      "items": [
+        "STRUKTUR",
+        "PROGRESSION",
+        "COACHING",
+        "KONSTANZ",
+        "KRAFTAUFBAU",
+        "ATHLETIK"
+      ]
     },
     "about": {
       "heading": "ÜBER MICH",
-      "description": "Ich bin Jess, Personal Trainer aus Berlin mit Background im Leistungs-, Athletik- und Basketballbereich. Mein Fokus liegt auf Kraftaufbau, Fitness, funktionellem Training, Stabilität und echter Konstanz. Ich arbeite nicht mit planlosem Training oder kurzfristiger Motivation, sondern mit Struktur, Progression und Coaching, das wirklich zu dir und deinem Alltag passt.",
-      "button": "Mehr erfahren",
+      "description": "Ich bin Jess, Personal Trainer aus Berlin. Ich habe lange bei ALBA Berlin in der Nachwuchs-Bundesliga gespielt und danach an einer Prep School in den USA. Heute bin ich Head Coach bei RISMO Fitness und Athletiktrainer der Moabit Lions.",
+      "button": "Jetzt bewerben",
       "imageAlt1": "Training",
-      "imageAlt2": "Coaching"
+      "imageAlt2": "Coaching",
+      "description2": "Aus dem Leistungssport weiß ich: Ergebnisse kommen aus Struktur, Technik und Progression. Motivation hilft beim Anfangen, Konstanz bringt dich ans Ziel. Genau so coache ich dich."
     },
     "forWhom": {
-      "heading": "MEIN COACHING IST IDEAL FÜR DICH, WENN DU…",
-      "items": [
-        "Einen Plan brauchst, der wirklich zu dir passt",
-        "Dein Training ernsthaft und mit System angehen willst",
-        "Support und Accountability suchst",
-        "Nicht nur anfangen, sondern auch wirklich dranbleiben willst"
-      ]
+      "heading": "FÜR WEN",
+      "goals": [
+        {
+          "tag": "BUILD",
+          "title": "Endlich aufbauen",
+          "text": "Du fühlst dich zu dünn, trainierst und trotzdem tut sich nichts? Meistens liegt es nicht an der Genetik, sondern an Plan und Ernährung. Du bekommst beides: Krafttraining mit klarer Progression und einen Ernährungsplan, mit dem du gezielt zunimmst, mit Fokus auf Muskeln statt nur Gewicht.",
+          "items": [
+            "Krafttraining mit Progression, saubere Technik von Anfang an",
+            "Ernährungsplan für den Aufbau: Kalorien und Protein auf dich abgestimmt",
+            "Regelmäßige Checks: Gewicht, Kraftwerte, Fotos"
+          ]
+        },
+        {
+          "tag": "SHAPE",
+          "title": "Fett runter, Muskeln rauf",
+          "text": "Nur abnehmen macht dich nicht fit. Wir reduzieren Fett und bauen dabei Muskeln auf oder halten sie, mit Krafttraining und einer Ernährung, die in deinen Alltag passt. Egal ob Booty-Goals, definierter Oberkörper oder einfach wieder in Form kommen.",
+          "items": [
+            "Krafttraining statt endlosem Cardio",
+            "Ernährung ohne Crash-Diät, alltagstauglich",
+            "Messbare Ziele: Umfänge, Kraftwerte, Fotos"
+          ]
+        }
+      ],
+      "notFor": {
+        "heading": "Für wen nicht",
+        "text": "Ehrlich: Mein Coaching ist nichts für dich, wenn du eine schnelle Lösung suchst oder nur mal reinschnuppern willst. Es ist für dich, wenn du bereit bist, mindestens 3 Monate konstant dranzubleiben. Alter und Fitnesslevel sind egal, die Einstellung nicht."
+      }
     },
     "whatMakesDifferent": {
       "heading": "WAS MEIN COACHING BESONDERS MACHT",
@@ -89,18 +122,50 @@
           "ehrliches Feedback und Begleitung"
         ],
         "pricing": {
-          "single": { "label": "1h", "price": "89 €" },
-          "pack5": { "label": "5er Karte", "price": "399 €" },
-          "pack10": { "label": "10er Karte", "price": "750 €" },
-          "monthly1x": { "label": "Monatsabo (1x/Woche)", "price": "239 € / Monat" },
-          "monthly2x": { "label": "Monatsabo (2x/Woche)", "price": "450 € / Monat" }
+          "start2x": {
+            "label": "Startplatz 2x/Woche",
+            "price": "399 € / Monat",
+            "was": "450 €",
+            "note": "mind. 3 Monate",
+            "badge": "Beliebt"
+          },
+          "start1x": {
+            "label": "Startplatz 1x/Woche",
+            "price": "199 € / Monat",
+            "was": "239 €",
+            "note": "mind. 3 Monate"
+          },
+          "monthly2x": {
+            "label": "Abo 2x/Woche",
+            "price": "450 € / Monat",
+            "note": "Ernährungsplan inklusive"
+          },
+          "monthly1x": {
+            "label": "Abo 1x/Woche",
+            "price": "239 € / Monat",
+            "note": "Ernährungsplan inklusive"
+          },
+          "aboNote": "Wer konstant bleiben will, nimmt ein Abo.",
+          "single": {
+            "label": "Einzelstunde",
+            "price": "89 €"
+          },
+          "pack10": {
+            "label": "10er-Karte",
+            "price": "750 €"
+          },
+          "trial": {
+            "label": "Probetraining",
+            "price": "49 €",
+            "note": "wird bei Abschluss angerechnet"
+          }
         },
-        "button": "Personal Training anfragen",
-        "ctaButton": "Jetzt Call buchen"
+        "button": "Jetzt bewerben",
+        "startBox": "Bis 30.11. nehme ich 3 neue Kunden zum Startpreis auf. Dafür bleibst du mindestens 3 Monate dabei und gibst mir ehrliches Feedback."
       },
       "trainingPlan": {
-        "title": "Individueller Trainingsplan",
-        "subtitle": "Dein Plan. Klar strukturiert. Auf dich zugeschnitten.",
+        "title": "Plan",
+        "subtitle": "Individueller Trainingsplan",
         "description": "Du willst selbstständig trainieren, aber endlich mit einem Plan, der wirklich zu dir passt? Dann ist dieses Angebot dein perfekter Einstieg.",
         "description2": "Ich erstelle dir einen individuellen Trainingsplan auf Basis eines Fragebogens und eines Erstgesprächs, damit ich deine Ziele, dein aktuelles Level, deinen Alltag, dein Equipment und mögliche Einschränkungen richtig einschätzen kann.",
         "steps": [
@@ -117,48 +182,44 @@
           "keine laufende Betreuung"
         ],
         "delivery": "In der Regel innerhalb von 3–5 Tagen (oft auch schneller)",
-        "price": "59 €",
-        "button": "Trainingsplan starten"
+        "price": "59 € einmalig",
+        "button": "Jetzt bewerben",
+        "forYou": "Für dich, wenn du weißt, wie man trainiert, aber nicht was."
       },
       "coaching": {
-        "title": "Trainingsplan + Betreuung",
-        "subtitle": "Struktur, Support und Accountability – komplett online",
-        "description": "Du willst nicht nur einen Trainingsplan, sondern auch Feedback, Anpassungen und jemanden, der dich auf Kurs hält? Dann ist dieses Angebot für dich.",
-        "description2": "Die Betreuung findet komplett online statt. Du trainierst selbstständig, kannst mir aber jederzeit schreiben, wenn du Fragen zu deinen Workouts, Übungen, Gewichten oder deinem Fortschritt hast. Ich antworte dir in der Regel innerhalb von maximal 10 Stunden.",
-        "description3": "Ich bin dabei nicht nur dein Coach, sondern auch dein Accountability-Partner: jemand, der mitdenkt, motiviert und dafür sorgt, dass du wirklich dranbleibst.",
+        "title": "Coaching",
+        "subtitle": "Plan, Ernährung und Support – komplett online",
+        "description": "Du willst nicht nur einen Trainingsplan, sondern auch einen Ernährungsplan, Feedback und jemanden, der dich auf Kurs hält? Dann ist das Coaching für dich.",
+        "description2": "Die Betreuung findet komplett online statt. Du trainierst selbstständig, kannst mir aber jederzeit per WhatsApp schreiben, wenn du Fragen zu deinen Workouts, Übungen, Gewichten oder deinem Fortschritt hast. Ich antworte dir in der Regel innerhalb von maximal 10 Stunden.",
         "features": [
           "individueller Trainingsplan",
-          "Fragebogen + Erstgespräch",
-          "laufender Online-Support",
+          "individueller Ernährungsplan",
+          "WhatsApp-Support",
+          "Check-in alle 2 Wochen",
           "Anpassung von Gewichten und Übungen",
-          "Alternativübungen bei Bedarf",
-          "Accountability und ehrliches Feedback",
-          "Check-up-Calls nach Bedarf"
+          "Accountability und ehrliches Feedback"
         ],
-        "packages": {
-          "weeks4": { "title": "4 Wochen", "price": "99 €" },
-          "weeks8": { "title": "8 Wochen", "price": "179 €" },
-          "weeks12": { "title": "12 Wochen", "price": "249 €" }
-        },
-        "button": "Online-Coaching starten"
+        "button": "Jetzt bewerben",
+        "forYou": "Für dich, wenn du einen Plan und jemanden zum Dranbleiben brauchst.",
+        "price": "99 € / Monat"
       },
       "vip": {
-        "title": "VIP Coaching",
-        "subtitle": "Exklusiv. Eng. Persönlich.",
-        "description": "Du willst nicht nur Training, sondern einen persönlichen Coach, der exklusiv mit dir arbeitet, auf deine Bedürfnisse eingeht und dich eng begleitet? Dann ist VIP Coaching die intensivste Form der Zusammenarbeit.",
-        "description2": "Hier geht es nicht nur um Workouts, sondern um Training, Ernährungsempfehlungen, Support, Accountability und eine deutlich engere Begleitung, die individuell auf dich und deinen Alltag abgestimmt ist.",
+        "title": "VIP",
+        "subtitle": "Online-Coaching plus Training vor Ort",
+        "description": "Du bekommst alles aus dem Coaching und trainierst zusätzlich zweimal im Monat persönlich mit mir in Berlin.",
+        "description2": "In den Sessions vor Ort checken wir Technik, Kraftwerte und Fortschritt und passen deinen Plan direkt an.",
         "features": [
-          "individuelles Coaching",
-          "engere und persönlichere Begleitung",
-          "Training und Struktur",
-          "Ernährungsempfehlungen",
-          "laufender Support",
-          "Accountability",
-          "direkter Austausch und enge Anpassung"
+          "alles aus dem Coaching",
+          "2 Personal-Training-Sessions vor Ort pro Monat",
+          "Trainingsplan und Ernährungsplan",
+          "WhatsApp-Support",
+          "Check-in alle 2 Wochen"
         ],
-        "price": "Preis auf Anfrage",
-        "button": "VIP anfragen"
-      }
+        "price": "279 € / Monat",
+        "button": "Jetzt bewerben",
+        "forYou": "Für dich, wenn du online und vor Ort betreut werden willst."
+      },
+      "onlineLabel": "Online-Coaching in 3 Stufen"
     },
     "faq": {
       "label": "FAQ",
@@ -169,8 +230,24 @@
           "answer": "Im Erstgespräch schauen wir uns gemeinsam dein Ziel, deinen aktuellen Stand und deine Rahmenbedingungen an. So kann ich besser einschätzen, welches Angebot für dich am meisten Sinn macht und wie der beste Start für dich aussieht."
         },
         {
-          "question": "Was ist der Unterschied zwischen dem Trainingsplan und dem Trainingsplan + Betreuung?",
-          "answer": "Beim individuellen Trainingsplan bekommst du einen klaren, auf dich zugeschnittenen Plan, den du selbstständig umsetzt. Beim Trainingsplan + Betreuung bekommst du zusätzlich laufenden Support, Anpassungen, Feedback und Accountability. Das heißt: Du bist mit deinem Training nicht allein und kannst jederzeit Rückfragen stellen."
+          "question": "Wo findet das Training statt?",
+          "answer": "Das 1:1 Training findet in Berlin statt, das Coaching komplett online. Wo genau wir trainieren, klären wir im Erstgespräch."
+        },
+        {
+          "question": "Was kostet das Probetraining?",
+          "answer": "49 €. Der Betrag wird beim Abschluss eines Abos angerechnet."
+        },
+        {
+          "question": "Gibt es eine Mindestlaufzeit?",
+          "answer": "Startplätze laufen mindestens 3 Monate. Reguläre Abos sind nach 3 Monaten monatlich kündbar."
+        },
+        {
+          "question": "Bekomme ich auch einen Ernährungsplan?",
+          "answer": "Ja, in jedem Abo und online ab der Coaching-Stufe."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen Plan und Coaching?",
+          "answer": "Beim Plan bekommst du einen klaren, auf dich zugeschnittenen Trainingsplan, den du selbstständig umsetzt. Beim Coaching bekommst du zusätzlich einen Ernährungsplan, WhatsApp-Support, Check-ins alle 2 Wochen und Anpassungen. Das heißt: Du bist mit deinem Training nicht allein und kannst jederzeit Rückfragen stellen."
         },
         {
           "question": "Ist die Betreuung bei den Online-Angeboten komplett digital?",
@@ -182,15 +259,15 @@
         },
         {
           "question": "Was ist, wenn ich nicht weiß, wie eine Übung funktioniert?",
-          "answer": "Kein Problem. Wenn du das Angebot Trainingsplan + Betreuung gebucht hast, kannst du mir einfach schreiben. Ich schicke dir dann je nach Situation Beispiel-Videos, Erklärungen oder passende Alternativen. Wichtig ist: Du sollst die Übungen sicher und sauber umsetzen können."
+          "answer": "Kein Problem. Wenn du das Coaching gebucht hast, kannst du mir einfach schreiben. Ich schicke dir dann je nach Situation Beispiel-Videos, Erklärungen oder passende Alternativen. Wichtig ist: Du sollst die Übungen sicher und sauber umsetzen können."
         },
         {
           "question": "Kann ich später vom Trainingsplan ins Personal Training wechseln?",
-          "answer": "Ja, natürlich. Wenn du merkst, dass du mehr direkte Begleitung, Korrekturen oder persönlichen Support willst, können wir jederzeit vom Trainingsplan ins 1:1 Personal Training oder ins VIP Coaching wechseln."
+          "answer": "Ja, natürlich. Wenn du merkst, dass du mehr direkte Begleitung, Korrekturen oder persönlichen Support willst, können wir jederzeit vom Plan ins 1:1 Personal Training oder ins VIP wechseln."
         },
         {
-          "question": "Für wen ist VIP Coaching sinnvoll?",
-          "answer": "VIP Coaching ist ideal für dich, wenn du nicht nur einen Plan willst, sondern eine engere, persönlichere und exklusivere Begleitung suchst – mit mehr Support, mehr Struktur und direkterem Austausch."
+          "question": "Für wen ist VIP sinnvoll?",
+          "answer": "VIP ist ideal für dich, wenn du online betreut werden und zusätzlich zweimal im Monat vor Ort mit mir trainieren willst."
         },
         {
           "question": "Wie läuft der individuelle Trainingsplan ab?",
@@ -215,8 +292,36 @@
       "titleLine2": "STRUKTUR",
       "titleAccent": "ZU TRAINIEREN?",
       "subtitle": "Egal ob Personal Training, individueller Trainingsplan oder Online-Coaching — wir finden den Weg, der zu dir passt.",
-      "primaryButton": "Jetzt Call buchen",
+      "primaryButton": "Jetzt bewerben",
       "secondaryButton": "Angebot auswählen"
+    },
+    "apply": {
+      "label": "Bewerbung",
+      "heading": "Jetzt bewerben",
+      "subheading": "Erzähl mir kurz von deinem Ziel. Ich melde mich innerhalb von 24 Stunden.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon (optional)",
+      "goal": "Dein Ziel",
+      "goalOptions": {
+        "build": "BUILD · Aufbauen",
+        "shape": "SHAPE · Fett runter, Muskeln rauf",
+        "other": "Anderes"
+      },
+      "frequency": "Wie oft kannst du pro Woche trainieren?",
+      "select": "Bitte wählen",
+      "whyNow": "Warum jetzt?",
+      "whyNowPlaceholder": "Was ist der Grund, dass du gerade jetzt starten willst?",
+      "message": "Noch etwas? (optional)",
+      "required": "Pflichtfeld",
+      "invalidEmail": "Ungültige E-Mail-Adresse",
+      "submit": "Bewerbung absenden",
+      "submitting": "Wird gesendet …",
+      "error": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal.",
+      "successHeading": "Danke für deine Bewerbung!",
+      "successText": "Buch dir jetzt direkt einen kostenlosen 15-Minuten-Call, damit wir dein Ziel besprechen können.",
+      "bookCall": "15-Minuten-Call buchen"
     }
   },
   "about": {
@@ -224,7 +329,7 @@
     "section1": {
       "subheader": "Background",
       "header": "Leistung, Athletik & Basketball",
-      "description1": "Ich bin Jess, Personal Trainer aus Berlin mit Background im Leistungs-, Athletik- und Basketballbereich. Mein Fokus liegt auf Kraftaufbau, Fitness, funktionellem Training, Stabilität und echter Konstanz.",
+      "description1": "Ich bin Jess, Personal Trainer aus Berlin. Ich habe lange bei ALBA Berlin in der Nachwuchs-Bundesliga gespielt und danach an einer Prep School in den USA. Heute bin ich Head Coach bei RISMO Fitness und Athletiktrainer der Moabit Lions.",
       "description2": "Ich arbeite nicht mit planlosem Training oder kurzfristiger Motivation, sondern mit Struktur, Progression und Coaching, das wirklich zu dir und deinem Alltag passt."
     },
     "section2": {
@@ -237,13 +342,13 @@
       "subheader": "Für dich",
       "header": "Echtes Coaching, das passt",
       "description1": "Egal ob du stärker werden, Fett verlieren, deine Fitness verbessern oder einfach wieder konstant trainieren willst — wir bauen gemeinsam einen Weg, den du auch wirklich durchziehen kannst.",
-      "description2": "Kein Standardplan. Kein \u201EEinfach durchziehen.\u201C Sondern ein System, das zu deinem Alltag, deinem Körper und deinem Level passt — mit jemandem, der mitdenkt und dranbleibt."
+      "description2": "Kein Standardplan. Kein „Einfach durchziehen.“ Sondern ein System, das zu deinem Alltag, deinem Körper und deinem Level passt — mit jemandem, der mitdenkt und dranbleibt."
     }
   },
   "contact": {
     "title": "Kontakt / Call buchen",
     "description": "Wenn du Fragen hast oder direkt starten willst, kannst du dir einfach einen Call buchen oder mir direkt schreiben.",
-    "email": "Email: jess@trainer.de",
+    "email": "Email: jwctrainingberlin@gmail.com",
     "form": {
       "firstName": "Vorname *",
       "lastName": "Nachname *",
@@ -284,16 +389,16 @@
         "duration": "4–6 Wochen"
       },
       "coaching": {
-        "program": "Trainingsplan + Betreuung",
-        "description": "Struktur, Support und Accountability – komplett online. Ab 99 €.",
+        "program": "Coaching",
+        "description": "Plan, Ernährungsplan, WhatsApp-Support und Check-in alle 2 Wochen. 99 € / Monat.",
         "type": "Online-Betreuung",
-        "duration": "4–12 Wochen"
+        "duration": "Monatlich"
       },
       "vip": {
-        "program": "VIP Coaching",
-        "description": "Exklusiv. Eng. Persönlich. Die intensivste Form der Zusammenarbeit.",
+        "program": "VIP",
+        "description": "Coaching plus 2 Personal-Training-Sessions vor Ort pro Monat. 279 € / Monat.",
         "type": "Exklusiv-Coaching",
-        "duration": "Auf Anfrage"
+        "duration": "Monatlich"
       }
     }
   },
@@ -326,12 +431,12 @@
   "footer": {
     "contact": "KONTAKT",
     "emailLink": "E-Mail",
-    "bookCall": "Call buchen",
+    "bookCall": "Jetzt bewerben",
     "offers": "ANGEBOTE",
     "personalTraining": "Personal Training",
     "trainingPlan": "Trainingsplan",
-    "coaching": "Trainingsplan + Betreuung",
-    "vip": "VIP Coaching",
+    "coaching": "Coaching",
+    "vip": "VIP",
     "tagline": "STRUKTUR STATT MOTIVATION",
     "privacy": "DATENSCHUTZ",
     "terms": "IMPRESSUM",
@@ -369,14 +474,14 @@
       "contactInfo": {
         "title": "Kontaktinformationen",
         "content": "Bei Fragen zu diesen Geschäftsbedingungen kontaktieren Sie uns bitte:",
-        "email": "Per E-Mail: jess@trainer.de",
-        "phone": "Per Telefon: (917) 426 0289"
+        "email": "Per E-Mail: jwctrainingberlin@gmail.com",
+        "phone": "Per Telefon: +49 156 79614147"
       }
     },
     "policy": {
       "title": "Datenschutzerklärung",
       "lastUpdated": "Letzte Aktualisierung: 8. September 2023",
-      "intro": "Diese Datenschutzerklärung beschreibt, wie Jess Personal Training Ihre personenbezogenen Daten erfasst, verwendet und weitergibt, wenn Sie jesstrainer.de besuchen oder nutzen.",
+      "intro": "Diese Datenschutzerklärung beschreibt, wie Jess Personal Training Ihre personenbezogenen Daten erfasst, verwendet und weitergibt, wenn Sie jwctraining.de besuchen oder nutzen.",
       "collect": {
         "title": "Erhobene Daten",
         "intro": "Wir erheben verschiedene Arten von Informationen zu verschiedenen Zwecken, um unseren Service für Sie bereitzustellen und zu verbessern.",
@@ -409,12 +514,19 @@
       "contactUs": {
         "title": "Kontakt",
         "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte:",
-        "email": "Per E-Mail: jess@trainer.de"
+        "email": "Per E-Mail: jwctrainingberlin@gmail.com"
       }
     }
   },
   "menu": {
     "privacyPolicy": "Datenschutzerklärung",
     "termsOfService": "Allgemeine Geschäftsbedingungen"
+  },
+  "banner": {
+    "text": "Nur 3 Startplätze bis 30.11.",
+    "cta": "Jetzt bewerben"
+  },
+  "whatsapp": {
+    "label": "Schreib mir auf WhatsApp"
   }
 }

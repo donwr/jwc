@@ -1,12 +1,14 @@
 import s from 'app/(pages)/(components)/wrapper/wrapper.module.scss'
 import cn from 'clsx'
 import { Cart } from 'libs/shopify/cart'
+import { Banner } from '../banner'
 import { Footer } from '../footer'
 import { Lenis } from '../lenis'
 import { Navigation } from '../navigation'
 import Menu from '../navigation/menu/Menu'
 import MenuManager from '../navigation/menu/MenuManager'
 // import { ShowCart } from '../shopify/show-cart'
+import { WhatsAppButton } from '../whatsapp'
 import WorkoutMenu from '../workout-menu'
 
 export function Wrapper({
@@ -15,12 +17,18 @@ export function Wrapper({
   lenis = true,
   lenisOptions = {},
   className,
+  banner = false,
 }) {
   return (
     <>
       {lenis && <Lenis root options={lenisOptions} />}
 
-      <div className={cn(s.wrapper, `theme-${theme}`, className)}>
+      <div
+        className={cn(s.wrapper, `theme-${theme}`, className, {
+          [s.hasBanner]: banner,
+        })}
+      >
+        {banner && <Banner />}
         <Navigation />
 
         <Cart>
@@ -33,6 +41,7 @@ export function Wrapper({
           </main>
         </Cart>
         <WorkoutMenu />
+        <WhatsAppButton />
         <Footer />
       </div>
     </>

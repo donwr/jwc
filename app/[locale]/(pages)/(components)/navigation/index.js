@@ -63,7 +63,7 @@ export function Navigation() {
 
         <div className={s.contact}>
           <LanguageToggle />
-          <Link className={s.bookBtn} href={'#cta'}>
+          <Link className={s.bookBtn} href={'/#contact'}>
             {t('bookCall')}
           </Link>
         </div>

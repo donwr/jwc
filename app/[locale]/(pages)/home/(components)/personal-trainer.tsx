@@ -11,9 +11,7 @@ const PersonalTrainerIntro: React.FC = () => {
   return (
     <section id="about" className={styles.aboutSection}>
       <div className={styles.aboutContainer}>
-        <h2 className={styles.aboutHeading}>
-          {t('heading')}
-        </h2>
+        <h2 className={styles.aboutHeading}>{t('heading')}</h2>
 
         <div className={styles.aboutImageRow}>
           <div className={styles.aboutImageSmall}>
@@ -26,7 +24,8 @@ const PersonalTrainerIntro: React.FC = () => {
           </div>
           <div className={styles.aboutBody}>
             <p>{t('description')}</p>
-            <Link href="#cta" className={styles.pillBtn}>
+            <p>{t('description2')}</p>
+            <Link href="#contact" className={styles.pillBtn}>
               {t('button')}
             </Link>
           </div>

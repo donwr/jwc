@@ -15,8 +15,8 @@ export async function POST(request: Request) {
     const type = 'Newsletter Subscription'
 
     const { data, error } = await resend.emails.send({
-      from: 'Jess Training <no-reply@jesstrainer.de>',
-      to: ['jess@trainer.de'],
+      from: 'Jess Training <no-reply@notifications.jwctraining.de>',
+      to: ['jwctrainingberlin@gmail.com'],
       subject: 'New Newsletter Subscription',
       react: EmailTemplate({ firstName, email, type }),
     })
