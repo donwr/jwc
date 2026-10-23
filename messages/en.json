@@ -43,7 +43,8 @@
       "button": "Apply now",
       "imageAlt1": "Training",
       "imageAlt2": "Coaching",
-      "description2": "Competitive sport taught me that results come from structure, technique and progression. Motivation helps you start, consistency gets you there. That is exactly how I coach you."
+      "description2": "Competitive sport taught me that results come from structure, technique and progression. Motivation helps you start, consistency gets you there. That is exactly how I coach you.",
+      "rismo": "As Head Coach at RISMO Fitness you can train with me there too. More at <link>rismofitness.com</link>."
     },
     "forWhom": {
       "heading": "WHO IT'S FOR",
@@ -348,7 +349,7 @@
   "contact": {
     "title": "Contact / Book a call",
     "description": "If you have questions or want to get started right away, just book a call or message me directly.",
-    "email": "Email: jwctrainingberlin@gmail.com",
+    "email": "Email: jess@rismofitness.com",
     "form": {
       "firstName": "First Name *",
       "lastName": "Last Name *",
@@ -474,7 +475,7 @@
       "contactInfo": {
         "title": "Contact Information",
         "content": "For any questions about these Terms of Service, please contact us:",
-        "email": "By email: jwctrainingberlin@gmail.com",
+        "email": "By email: jess@rismofitness.com",
         "phone": "By phone: +49 156 79614147"
       }
     },
@@ -514,7 +515,7 @@
       "contactUs": {
         "title": "Contact Us",
         "content": "If you have any questions about this Privacy Policy, please contact us:",
-        "email": "By email: jwctrainingberlin@gmail.com"
+        "email": "By email: jess@rismofitness.com"
       }
     }
   },
@@ -523,7 +524,7 @@
     "termsOfService": "Terms of Service"
   },
   "banner": {
-    "text": "Only 3 starter spots until 30 Nov.",
+    "text": "Only 3 starter spots at a starter price until 30 Nov.",
     "cta": "Apply now"
   },
   "whatsapp": {

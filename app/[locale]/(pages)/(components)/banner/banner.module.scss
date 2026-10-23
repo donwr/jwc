@@ -23,4 +23,9 @@
   strong {
     font-weight: 700;
   }
+
+  @media (max-width: 420px) {
+    font-size: 0.6rem;
+    letter-spacing: 0.02em;
+  }
 }

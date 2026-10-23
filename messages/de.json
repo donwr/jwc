@@ -43,7 +43,8 @@
       "button": "Jetzt bewerben",
       "imageAlt1": "Training",
       "imageAlt2": "Coaching",
-      "description2": "Aus dem Leistungssport weiß ich: Ergebnisse kommen aus Struktur, Technik und Progression. Motivation hilft beim Anfangen, Konstanz bringt dich ans Ziel. Genau so coache ich dich."
+      "description2": "Aus dem Leistungssport weiß ich: Ergebnisse kommen aus Struktur, Technik und Progression. Motivation hilft beim Anfangen, Konstanz bringt dich ans Ziel. Genau so coache ich dich.",
+      "rismo": "Als Head Coach bei RISMO Fitness bin ich auch dort für dich da. Mehr dazu auf <link>rismofitness.com</link>."
     },
     "forWhom": {
       "heading": "FÜR WEN",
@@ -348,7 +349,7 @@
   "contact": {
     "title": "Kontakt / Call buchen",
     "description": "Wenn du Fragen hast oder direkt starten willst, kannst du dir einfach einen Call buchen oder mir direkt schreiben.",
-    "email": "Email: jwctrainingberlin@gmail.com",
+    "email": "Email: jess@rismofitness.com",
     "form": {
       "firstName": "Vorname *",
       "lastName": "Nachname *",
@@ -474,7 +475,7 @@
       "contactInfo": {
         "title": "Kontaktinformationen",
         "content": "Bei Fragen zu diesen Geschäftsbedingungen kontaktieren Sie uns bitte:",
-        "email": "Per E-Mail: jwctrainingberlin@gmail.com",
+        "email": "Per E-Mail: jess@rismofitness.com",
         "phone": "Per Telefon: +49 156 79614147"
       }
     },
@@ -514,7 +515,7 @@
       "contactUs": {
         "title": "Kontakt",
         "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte:",
-        "email": "Per E-Mail: jwctrainingberlin@gmail.com"
+        "email": "Per E-Mail: jess@rismofitness.com"
       }
     }
   },
@@ -523,7 +524,7 @@
     "termsOfService": "Allgemeine Geschäftsbedingungen"
   },
   "banner": {
-    "text": "Nur 3 Startplätze bis 30.11.",
+    "text": "Nur 3 Startplätze bis 30.11. zum Startpreis",
     "cta": "Jetzt bewerben"
   },
   "whatsapp": {

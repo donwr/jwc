@@ -16,7 +16,7 @@ const PersonalTrainerIntro: React.FC = () => {
         <div className={styles.aboutImageRow}>
           <div className={styles.aboutImageSmall}>
             <Image
-              src="/about-01.jpg"
+              src="/hero.jpg"
               alt={t('imageAlt1')}
               fill
               style={{ objectFit: 'cover' }}
@@ -25,6 +25,20 @@ const PersonalTrainerIntro: React.FC = () => {
           <div className={styles.aboutBody}>
             <p>{t('description')}</p>
             <p>{t('description2')}</p>
+            <p>
+              {t.rich('rismo', {
+                link: (chunks) => (
+                  <a
+                    href="https://rismofitness.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.aboutLink}
+                  >
+                    {chunks}
+                  </a>
+                ),
+              })}
+            </p>
             <Link href="#contact" className={styles.pillBtn}>
               {t('button')}
             </Link>

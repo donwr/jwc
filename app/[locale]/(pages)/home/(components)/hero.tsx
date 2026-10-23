@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
       <div className={styles.heroRight}>
         <div className={styles.heroImageMain}>
           <Image
-            src="/hero.jpg"
+            src="/about-01.jpg"
             alt={t('imageAlt')}
             fill
             style={{ objectFit: 'cover' }}

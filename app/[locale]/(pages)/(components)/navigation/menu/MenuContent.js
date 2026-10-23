@@ -51,8 +51,8 @@ export default function MenuContent() {
 
       {/* Bottom bar */}
       <div className={s.menuBottom}>
-        <a href="mailto:jwctrainingberlin@gmail.com" className={s.menuEmail}>
-          jwctrainingberlin@gmail.com
+        <a href="mailto:jess@rismofitness.com" className={s.menuEmail}>
+          jess@rismofitness.com
         </a>
         <div className={s.menuWordmark}>JWC</div>
       </div>

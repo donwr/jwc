@@ -14,10 +14,10 @@ export default function ContactSection() {
           <p className={styles.contactSubheading}>{t('subheading')}</p>
           <div className={styles.contactMeta}>
             <a
-              href="mailto:jwctrainingberlin@gmail.com"
+              href="mailto:jess@rismofitness.com"
               className={styles.contactMetaItem}
             >
-              jwctrainingberlin@gmail.com
+              jess@rismofitness.com
             </a>
             <a href="tel:+4915679614147" className={styles.contactMetaItem}>
               +49 156 79614147

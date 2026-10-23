@@ -18,7 +18,7 @@ const Impressum = () => {
         <h4>Kontakt</h4>
         <p>
           Telefon: +49 156 79614147<br />
-          E-Mail: <a href="mailto:jwctrainingberlin@gmail.com">jwctrainingberlin@gmail.com</a>
+          E-Mail: <a href="mailto:jess@rismofitness.com">jess@rismofitness.com</a>
         </p>
 
         <h4>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h4>

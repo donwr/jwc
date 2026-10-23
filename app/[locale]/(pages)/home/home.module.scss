@@ -326,6 +326,12 @@ $radius-lg: 12px;
   flex: 1;
   text-align: center;
 
+  .aboutLink {
+    color: $text;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
   p {
     font-size: 0.95rem;
     line-height: 1.8;

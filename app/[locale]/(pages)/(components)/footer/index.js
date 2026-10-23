@@ -12,7 +12,7 @@ export function Footer() {
                   <h5>KONTAKT</h5>
                   <ul className={s.ul}>
                     <li>
-                      <a href="mailto:jwctrainingberlin@gmail.com">E-Mail</a>
+                      <a href="mailto:jess@rismofitness.com">E-Mail</a>
                     </li>
                     <li>
                       <a href="tel:+4915679614147">+49 156 79614147</a>

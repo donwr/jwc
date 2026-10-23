@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <ul>
-          <li>By email: jwctrainingberlin@gmail.com</li>
+          <li>By email: jess@rismofitness.com</li>
         </ul>
       </div>
     </Wrapper>
