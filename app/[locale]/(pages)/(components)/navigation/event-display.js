@@ -4,13 +4,12 @@ import { ArrowUpRight } from '@phosphor-icons/react'
 import { gsap } from 'gsap'
 import { useLocale } from 'next-intl'
 import { useEffect, useRef, useState } from 'react'
+import { getIntroCalLink } from '../../(data)/booking'
 import { nextEvent as importedEventsData } from '../../(data)/next-event'
 import s from './event-display.module.scss' // Import the SCSS file as a module
 export const EventDisplay = () => {
   const locale = useLocale()
-  const calLink = locale === 'de'
-    ? 'jwc-training-pf0zsk/vorstellungsgespraech'
-    : 'jwc-training-pf0zsk/initial-consultation'
+  const calLink = getIntroCalLink(locale)
   const [showNextEvent, setShowNextEvent] = useState(true)
   const eventRef = useRef(null)
 

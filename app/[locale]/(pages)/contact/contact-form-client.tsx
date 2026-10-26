@@ -4,6 +4,7 @@ import { ErrorMessage, Field, Form, Formik } from 'formik'
 import { useLocale, useTranslations } from 'next-intl'
 import { useState } from 'react'
 import * as Yup from 'yup'
+import { getIntroCalLink } from '../(data)/booking'
 import { Button } from '../(components)/buttons/button'
 import CalButton from '../(components)/buttons/cal-button'
 import s from './contact.module.scss'
@@ -16,10 +17,7 @@ export default function ContactFormClient() {
   const t = useTranslations('home.apply')
   const locale = useLocale()
   const [submitted, setSubmitted] = useState(false)
-  const calLink =
-    locale === 'de'
-      ? 'jwc-training-pf0zsk/vorstellungsgespraech'
-      : 'jwc-training-pf0zsk/initial-consultation'
+  const calLink = getIntroCalLink(locale)
 
   const validationSchema = Yup.object({
     firstName: Yup.string().required(t('required')),

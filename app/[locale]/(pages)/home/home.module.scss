@@ -1444,6 +1444,42 @@ $radius-lg: 12px;
   max-width: 240px;
 }
 
+.contactBook {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.25rem 0;
+  margin-bottom: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.contactBookText {
+  font-size: 0.85rem;
+  color: $text-muted;
+  line-height: 1.6;
+  text-transform: none;
+}
+
+.contactBookButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 100px;
+  background-color: #1a1a1a;
+  color: #f5f0eb;
+  font-size: 0.7rem;
+  font-family: var(--font-ibm-plex-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .contactMeta {
   display: flex;
   flex-direction: column;

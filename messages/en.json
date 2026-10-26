@@ -321,8 +321,10 @@
       "submitting": "Sending …",
       "error": "Something went wrong. Please try again.",
       "successHeading": "Thanks for applying!",
-      "successText": "Book your free 15-minute call now so we can talk about your goal.",
-      "bookCall": "Book 15-minute call"
+      "successText": "Book your free 20-minute get-to-know call now so we can talk about your goal.",
+      "bookCall": "Book get-to-know call",
+      "bookIntroText": "Rather talk first? Book a free 20-minute get-to-know call.",
+      "bookIntro": "Book get-to-know call"
     }
   },
   "about": {

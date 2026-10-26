@@ -321,8 +321,10 @@
       "submitting": "Wird gesendet …",
       "error": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal.",
       "successHeading": "Danke für deine Bewerbung!",
-      "successText": "Buch dir jetzt direkt einen kostenlosen 15-Minuten-Call, damit wir dein Ziel besprechen können.",
-      "bookCall": "15-Minuten-Call buchen"
+      "successText": "Buch dir jetzt direkt ein kostenloses 20-minütiges Kennenlerngespräch, damit wir dein Ziel besprechen können.",
+      "bookCall": "Kennenlerngespräch buchen",
+      "bookIntroText": "Lieber erst reden? Buch dir ein kostenloses 20-minütiges Kennenlerngespräch.",
+      "bookIntro": "Kennenlerngespräch buchen"
     }
   },
   "about": {
